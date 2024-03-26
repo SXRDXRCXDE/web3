@@ -71,7 +71,7 @@ export default function Header() {
 
                         <div className={'flex flex-col items-end gap-1.5 text-white'}>
 
-                            {NavLinks.map((value, index)=> <Link key={index}  className={'hover:text-[#F80AFB] duration-300 text-[20px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} to={value.to}>{value.title}</Link>)}
+                            {NavLinks.map((value, index)=> <a key={index}  className={'hover:text-[#F80AFB] duration-300 text-[20px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={value.to}>{value.title}</a>)}
 
                         </div>
 
