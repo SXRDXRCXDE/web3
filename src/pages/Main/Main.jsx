@@ -49,7 +49,7 @@ export default function Main() {
             <div id={'home'} className={style.entrance_section}>
 
                 {/*There are background Images*/}
-                <img src={layer} className={'w-full h-full object-cover max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
+                <img src={layer} className={'w-full h-full object-fill max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
                 <img src={mobile_layer} className={'w-full h-full object-fill min-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
                 <img src={frame} className={'w-[90%] max-[600px]:hidden max-[1200px]:h-[80%] max-[1200px]:object-fill h-3/4 object-contain absolute top-16 left-0 right-0 m-auto'} alt={'web3'}/>
                 <img src={frame_mobile} className={'w-[90%] min-[600px]:hidden h-3/4 object-fill absolute top-16 left-0 right-0 m-auto'} alt={'web3'}/>
