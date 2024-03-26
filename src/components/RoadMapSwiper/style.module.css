@@ -1,0 +1,3 @@
+.next {
+    @apply max-[1000px]:w-12 max-[1000px]:h-12 w-16 h-16 bg-no-repeat bg-center bg-contain flex items-center justify-center text-white max-[1000px]:text-2xl text-4xl cursor-pointer duration-200 active:text-[#F80AFB] ;
+}
