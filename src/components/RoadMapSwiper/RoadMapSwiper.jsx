@@ -137,29 +137,6 @@ export default function RoadMapSwiper() {
 
             </div>
 
-            {/*<div className={'w-full flex items-center justify-between absolute -bottom-44 max-[450px]:bottom-12 max-[1000px]:-bottom-16 px-24 max-[1000px]:px-3 max-[1000px]:gap-3 z-10 '}>*/}
-
-            {/*    <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>*/}
-
-            {/*    <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>*/}
-
-            {/*        <div style={{backgroundImage: `url(${prev})`}} className={` image-swiper-button-prev__ ${style.next}`}>*/}
-
-            {/*            <GrPrevious />*/}
-
-            {/*        </div>*/}
-            {/*        <div style={{backgroundImage: `url(${next})`}} className={` image-swiper-button-next__ ${style.next}`}>*/}
-
-            {/*            <GrNext />*/}
-
-            {/*        </div>*/}
-
-            {/*    </div>*/}
-
-            {/*    <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>*/}
-
-            {/*</div>*/}
-
 
             <Carousel
                 additionalTransfrom={0}

@@ -1,0 +1,4 @@
+/* custom-carousel.css */
+.react-multi-carousel-list {
+    overflow: visible !important; /* Переопределяем overflow на visible */
+}

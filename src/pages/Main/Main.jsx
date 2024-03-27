@@ -14,7 +14,6 @@ import chn3 from "../../assets/img/layers/roadMap.png";
 import {FaDownload, FaInstagram, FaYoutube} from "react-icons/fa";
 import {RiTwitterXFill} from "react-icons/ri";
 
-import GameDesignSwiper from "../../components/GameDesignSwiper/GameDesignSwiper";
 import RoadMapSwiper from "../../components/RoadMapSwiper/RoadMapSwiper";
 import Team from "../../components/Team/Team";
 import PlayEarn from "../../components/Play&Earn/Play&Earn";
