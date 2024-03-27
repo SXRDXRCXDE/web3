@@ -37,11 +37,11 @@ export default function Team() {
     ]
 
     return<>
-        <div className={'w-full max-[1000px]:h-[800px] h-[600px] flex flex-col items-center justify-center relative'}>
+        <div className={'w-full max-[1000px]:h-[800px] max-[450px]:h-[700px] h-[600px] flex flex-col items-center justify-center relative'}>
 
             <img className={'w-full h-full object-fill absolute top-0 left-0 right-0 m-auto'} src={backlayer2} alt={'web3'}/>
 
-            <div className={'flex gap-12 items-center mt-10 max-[1320px]:gap-0 duration-300 max-[1000px]:hidden'}>
+            <div className={'flex gap-4 items-center mt-10 max-[1320px]:gap-0 duration-300 max-[1000px]:hidden'}>
 
                 {Members.map((value, index)=> <div key={index} className={' max-[1200px]:w-60 max-[1200px]:h-80 w-72 h-96 relative flex flex-col items-center justify-end duration-300'}>
 
@@ -119,9 +119,9 @@ export default function Team() {
             </div>
 
 
-            <div className={'flex flex-col items-center z-10 max-[450px]:mt-32 max-[1000px]:mt-24 mt-10 leading-[30px] gap-3'}>
-                <div className={'text-white text-[26px]  '}>AND MORE THAN</div>
-                <div className={'text-[#F6CC72] text-[36px] font-outline-2'}> 10+ SPECIALISTS</div>
+            <div className={'flex flex-col items-center z-10 max-[450px]:mt-32 max-[1000px]:mt-24 mt-10 max-[450px]:leading-[15px] leading-[30px] gap-3'}>
+                <div className={'text-white text-[26px] max-[450px]:text-[19px]  '}>AND MORE THAN</div>
+                <div className={'text-[#F6CC72] text-[36px] max-[450px]:text-[25px] font-outline-2'}> 10+ SPECIALISTS</div>
             </div>
 
         </div>

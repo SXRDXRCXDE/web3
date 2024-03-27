@@ -32,14 +32,14 @@ export default function PlayEarn() {
     ]
 
     return<>
-        <div className={'w-full h-auto max-[1200px]:min-h-[600px] duration-300 min-h-screen flex flex-col items-center gap-4 mt-4 max-[1000px]:pb-24 '}>
+        <div className={'w-full h-auto max-[1200px]:min-h-[600px] duration-300 min-h-screen flex flex-col items-center gap-4 mt-4 max-[600px]:mt-0 max-[600px]:-translate-y-16 max-[1000px]:pb-24 '}>
 
-            <p className={'max-[1000px]:text-[35px] text-[40px] text-white relative z-10'}>PLAY, EARN, <span className={'text-[#F80AFB] relative'}> CONNECT <img className={'w-20 h-20 object-contain absolute -right-4 -top-2 -z-10'} src={chn2} alt={'web3'}/> </span>  </p>
+            <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[2px] text-white relative mb-2 z-10'}>PLAY, EARN, <span className={'text-[#F80AFB] relative'}> CONNECT <img className={'w-20 h-20 object-contain absolute -right-4 -top-2 -z-10'} src={chn2} alt={'web3'}/> </span>  </p>
             <p className={'max-[1200px]:px-8 duration-300 max-[1000px]:px-3 max-[1000px]:text-[14px] text-[18px] text-white'}>Martial Rabbits seamlessly integrates multiple in-game avenues for a diverse and engaging experience, <br/> all available from the get-go at no cost.</p>
 
             <div className={'w-auto flex  items-center max-[1000px]:hidden '}>
 
-                {Cards.map((value, index)=> <div key={index} className={'max-[1200px]:w-60 max-[1200px]:h-[350px] w-96  h-[585px] flex flex-col items-center justify-end relative mr-1 duration-300'}>
+                {Cards.map((value, index)=> <div key={index} className={` ${index===2? `-translate-x-3.5` :``} max-[1200px]:w-60 max-[1200px]:h-[350px] w-96  h-[585px] flex flex-col items-center justify-end relative mr-2 duration-300`}>
                     <img className={'w-full h-full object-contain absolute bottom-0 -z-0'} src={value.img} alt={'web3'}/>
 
                     <div className={` ${index===1? `ml-0.5 ${style.shapedrectangle} w-[95%] self-start` :`w-[99%]`}  duration-300 max-[1200px]:w-[97%] max-[1200px]:h-20 max-[1200px]:mb-0 max-[1200px]:leading-[13px] h-28 bg-white/5 backdrop-blur z-0 mb-3 flex flex-col items-center leading-[20px]`}>

@@ -13,6 +13,10 @@ import {GrNext, GrPrevious} from "react-icons/gr";
 import holder from "../../assets/img/cards/card.png";
 import holder2 from "../../assets/img/cards/holder2.png";
 import {IoRadioButtonOffSharp, IoRadioButtonOn} from "react-icons/io5";
+import prevImg from "../../assets/img/icons/prev.png";
+import nextImg from "../../assets/img/icons/next.png";
+import Carousel from "react-multi-carousel";
+import "./custom.css";
 
 
 export default function RoadMapSwiper() {
@@ -93,27 +97,24 @@ export default function RoadMapSwiper() {
         },
     ]
 
-    return<>
-        <div className={'w-full h-full flex items-start gap-3 relative'}>
-
-            <div className={'absolute -bottom-20 max-[1000px]:-top-24 px-24 max-[1000px]:px-3 w-full flex flex-col items-center '}>
-
-                <div className={'text-white text-[18px]'}>From our humble origins to the grand unveiling, be a part of the Martial Rabbits Metaverse journey!</div>
-
-            </div>
-
-            <div className={'w-full flex items-center justify-between absolute -bottom-44 max-[450px]:bottom-12 max-[1000px]:-bottom-16 px-24 max-[1000px]:px-3 max-[1000px]:gap-3 z-10 '}>
+    const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+        const { carouselState: { currentSlide } } = rest;
+        return (
+            <div className="w-full flex items-center justify-between absolute left-0 -bottom-44 max-[1000px]:-bottom-12 max-[450px]:-bottom-3 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 ">
+                {/*<div className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()} >Nihggga</div>*/}
+                {/*<div onClick={() => next()} >asdasddas</div>*/}
+                {/*<div onClick={() => goToSlide(currentSlide + 1)}> Go to any slide </div>*/}
 
                 <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
 
                 <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>
 
-                    <div style={{backgroundImage: `url(${prev})`}} className={` image-swiper-button-prev__ ${style.next}`}>
+                    <div style={{backgroundImage: `url(${prevImg})`}} onClick={() => previous()} className={style.next}>
 
                         <GrPrevious />
 
                     </div>
-                    <div style={{backgroundImage: `url(${next})`}} className={` image-swiper-button-next__ ${style.next}`}>
+                    <div style={{backgroundImage: `url(${nextImg})`}} onClick={() => next()} className={style.next}>
 
                         <GrNext />
 
@@ -122,39 +123,101 @@ export default function RoadMapSwiper() {
                 </div>
 
                 <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
+            </div>
+        );
+    };
+
+
+    return<>
+        <div className={'w-full h-full flex items-start gap-3 min-[700px]:pl-24 relative'}>
+
+            <div className={'absolute left-0 -bottom-20 max-[1000px]:-top-24 px-24 max-[1000px]:px-3 w-full flex flex-col items-center '}>
+
+                <div className={'text-white text-[18px]'}>From our humble origins to the grand unveiling, be a part of the Martial Rabbits Metaverse journey!</div>
 
             </div>
 
+            {/*<div className={'w-full flex items-center justify-between absolute -bottom-44 max-[450px]:bottom-12 max-[1000px]:-bottom-16 px-24 max-[1000px]:px-3 max-[1000px]:gap-3 z-10 '}>*/}
 
-            <Swiper
-                navigation={{
-                    nextEl: ".image-swiper-button-next__",
-                    prevEl: ".image-swiper-button-prev__",
-                    disabledClass: "swiper-button-disabled"
-                }}
-                modules={[Navigation , Autoplay]}
-                // loop={true}
-                className={'w-full h-full'}
-                spaceBetween={20}
-                freeMode={true}
-                slidesPerView={3}
-                grabCursor={true}
-                // centeredSlides={true}
-                breakpoints={{
-                    1000: {
-                        slidesPerView: 3,
-                        spaceBetween: 10
+            {/*    <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>*/}
+
+            {/*    <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>*/}
+
+            {/*        <div style={{backgroundImage: `url(${prev})`}} className={` image-swiper-button-prev__ ${style.next}`}>*/}
+
+            {/*            <GrPrevious />*/}
+
+            {/*        </div>*/}
+            {/*        <div style={{backgroundImage: `url(${next})`}} className={` image-swiper-button-next__ ${style.next}`}>*/}
+
+            {/*            <GrNext />*/}
+
+            {/*        </div>*/}
+
+            {/*    </div>*/}
+
+            {/*    <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>*/}
+
+            {/*</div>*/}
+
+
+            <Carousel
+                additionalTransfrom={0}
+                arrows={false}
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className="w-full h-full relative "
+                containerClass=""
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                partialVisible
+                pauseOnHover
+                renderArrowsWhenDisabled={false}
+                renderButtonGroupOutside={true}
+                renderDotsOutside={false}
+                customButtonGroup={<ButtonGroup/>}
+                responsive={{
+                    desktop: {
+                        breakpoint: {
+                            max: 3000,
+                            min: 1024
+                        },
+                        items: 3,
+                        partialVisibilityGutter: 30
                     },
-                    1: {
-                        slidesPerView: 1,
-                        spaceBetween: 10
-                    }
-                }}
-            >
-                {Cards.map((value, index)=>  <SwiperSlide  className={'w-full h-full  '}>
-                    <div key={index} className={'w-full  flex  justify-center'}>
+                    tablet: {
+                        breakpoint: {
+                            max: 1300,
+                            min: 600// Добавляем новую точку останова для экранов меньше 1300px
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 60
+                    },
+                    mobile: {
+                        breakpoint: {
+                            max: 600,
+                            min: 0
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 0
+                    },
 
-                        <div className={'max-[450px]:w-[300px] max-[450px]:h-[300px] w-[400px] h-[400px] flex flex-col items-center max-[450px]:px-7 max-[450px]:py-4 px-14 py-6  relative'}>
+                }}
+                rewind={false}
+                rewindWithAnimation={false}
+                rtl={false}
+                shouldResetAutoplay
+                showDots={false}
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
+            >
+                {Cards.map((value, B_index)=>
+                        <div className={' max-[450px]:translate-x-10 max-[450px]:w-[300px] max-[450px]:h-[300px] w-[400px] h-[400px] flex flex-col items-center max-[450px]:px-7 max-[450px]:py-4 px-14 py-6  relative'}>
 
                             <img className={'w-full h-full object-contain max-[450px]:object-fill absolute top-0 left-0 -z-10'} src={value.image} alt={'web3'}/>
                             <div className={'w-full h-full z-10'}>
@@ -165,11 +228,11 @@ export default function RoadMapSwiper() {
                                 </div>
                                 <div className={'w-full h-auto flex flex-col items-start text-start max-[450px]:mt-3 max-[450px]:gap-2 max-[1000px]:gap-6 max-[1280px]:gap-3 gap-6 mt-6 '}>
 
-                                    {value?.extra_infos.map((value, index)=> <div key={index} className={'flex items-center  gap-2 '}>
+                                    {value?.extra_infos.map((data, index)=> <div key={index} className={'flex items-center  gap-2 '}>
 
-                                        {index>1? <IoRadioButtonOffSharp className={'text-[#7767FF]'} /> : <IoRadioButtonOn className={'text-[#7767FF]'} />}
+                                        {index>1? <IoRadioButtonOffSharp className={'text-[#7767FF]'} /> : B_index===0? <IoRadioButtonOn className={'text-[#7767FF]'} /> : <IoRadioButtonOffSharp className={'text-[#7767FF]'} />}
 
-                                        <div className={'text-white text-[16px]'}>{value}</div>
+                                        <div className={'text-white text-[16px]'}>{data}</div>
 
                                     </div>)}
 
@@ -177,14 +240,9 @@ export default function RoadMapSwiper() {
 
                             </div>
 
-                        </div>
+                </div>)}
 
-                    </div>
-
-
-                </SwiperSlide>)}
-
-            </Swiper>
+            </Carousel>
 
         </div>
     </>

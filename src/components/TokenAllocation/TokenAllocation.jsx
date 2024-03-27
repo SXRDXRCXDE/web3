@@ -2,7 +2,7 @@ import React from "react";
 import backLayer from "../../assets/img/layers/back_layer.png";
 import graphic from "../../assets/img/layers/Grafik.png";
 import rabbit_huge from "../../assets/img/logo/Logo_rabbit_2xl.png";
-import runnin_rabbit from "../../assets/img/layers/run_rabbit.png";
+import runnin_rabbit from "../../assets/gif/1fiRun(1Sec).gif";
 
 export default function TokenAllocation() {
 
@@ -22,9 +22,9 @@ export default function TokenAllocation() {
             </div>
 
             <div className={'z-10 mt-16'}>
-                <p className={'text-[25px] text-white min-[1000px]:hidden'}><span className={'text-[25px] text-[#F80AFB]'}>Total Supply</span> <br/>
+                <p className={'text-[25px] max-[600px]:text-[19px] text-white min-[1000px]:hidden'}><span className={'text-[25px] max-[600px]:text-[19px] text-[#F80AFB]'}>Total Supply</span> <br/>
                     1 000 000 000
-                    <span className={'text-[25px] text-[#F80AFB]'}>     $MR Tokens</span>
+                    <span className={'text-[25px] max-[600px]:text-[19px] text-[#F80AFB]'}>     $MR Tokens</span>
                 </p>
             </div>
 
@@ -33,7 +33,7 @@ export default function TokenAllocation() {
 
                 <img className={'absolute top-0 left-0 z-0 m-auto'} src={graphic} alt={'web3'} />
                 <img className={'absolute max-[500px]:w-14 max-[500px]:h-14 max-[500px]:top-[38px] max-[500px]:-left-4 max-[1000px]:top-[70px] max-[1000px]:-left-5 -top-40 -z-10 max-[1000px]:w-20 max-[1000px]:h-20  m-auto duration-300'} src={rabbit_huge} alt={'web3'} />
-                <img className={'absolute bottom-20 max-[500px]:bottom-10 object-contain max-[500px]:h-32 max-[500px]:w-20 max-[1350px]:h-44 max-[1350px]:w-24 w-32 h-64 duration-300 '} src={runnin_rabbit} alt={'web3'} />
+                <img className={'absolute -bottom-8 max-[1350px]:-bottom-0 max-[500px]:bottom-2 object-contain max-[500px]:h-52 max-[500px]:w-44 max-[1350px]:h-80 max-[1350px]:w-52 w-80 h-[512px] duration-300 '} src={runnin_rabbit} alt={'web3'} />
 
 
                 <p className={'text-[25px] text-white max-[1000px]:hidden'}><span className={'text-[25px] text-[#F80AFB]'}>Total Supply</span> <br/>
