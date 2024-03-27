@@ -170,7 +170,7 @@ export default function Main() {
 
             </div>
 
-            {/*Team / eighth section*/}
+            {/*Team / eighth  section*/}
             <div id={'team'} className={'w-full h-auto min-h-screen flex flex-col items-center justify-start gap-4 mt-44 max-[450px]:mt-24  '}>
 
                 <p className={'max-[1000px]:text-[34px] text-[44px] tracking-[2px] text-white relative mb-14 z-10'}>Meet The <span className={'text-[#00D2FF]'}>Team!</span></p>
