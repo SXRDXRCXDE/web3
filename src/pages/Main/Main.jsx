@@ -138,7 +138,7 @@ export default function Main() {
 
                     <div className={'w-full h-[390px] max-[600px]:h-[300px] flex flex-col items-center relative mt-5 '}>
 
-                        <div className={'max-[1000px]:hidden w-full h-full'}>
+                        <div className={'max-[1000px]:hidden w-full h-full min-[1520px]:translate-y-5'}>
                             <GameSwiper/>
                         </div>
                         <div className={'min-[1000px]:hidden w-full h-full'}>
