@@ -71,7 +71,7 @@ export default function Footer() {
 
                 <div className={'w-full flex items-end justify-between'}>
 
-                    <a href={'/'} className={'-translate-y-1 max-[500px]:w-32 max-[500px]:h-8 w-42 h-14 overflow-hidden flex items-center justify-center '}>
+                    <a href={'/'} className={'-translate-y-1 max-[500px]:w-44 max-[500px]:h-14 w-44 h-14 overflow-hidden flex items-center justify-center '}>
 
                         <img className={'w-full h-full object-contain'} src={logo} alt={'Web3 Logo'}/>
 
@@ -95,7 +95,7 @@ export default function Footer() {
 
                 <div className={'w-full flex max-[1000px]:flex-col-reverse max-[1000px]:items-start items-center justify-between'}>
 
-                    <div className={'text-[#F80AFB] text-[12px] tracking-[1px] max-[500px]:text-[8px]'}>Ⓒ 2023 Martial Rabbits. All rigths reserved.</div>
+                    <div className={'text-[#F80AFB] text-[12px] tracking-[1px] max-[500px]:text-[8px] max-[450px]:translate-y-4'}>Ⓒ 2023 Martial Rabbits. All rigths reserved.</div>
 
                     <div className={'flex items-center max-[500px]:w-full max-[500px]:gap-0 max-[500px]:justify-between gap-5 text-white text-start'}>
 

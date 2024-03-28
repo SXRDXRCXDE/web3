@@ -1,6 +1,6 @@
 
 .entrance_section {
-    @apply w-full max-[1000px]:min-h-[99vh] min-[1000px]:min-h-[102vh] h-auto relative flex flex-col items-start justify-start max-[1000px]:pt-32 pt-52;
+    @apply w-full max-[1000px]:min-h-[99vh] min-[1000px]:min-h-[102vh] h-auto relative flex flex-col items-start justify-start max-[1000px]:pt-32 pt-52 ;
 }
 
 .demo_button {

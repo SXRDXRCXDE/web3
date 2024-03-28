@@ -22,6 +22,7 @@ import About_Martial_Rabbit from "../../components/About_Martial_Rabbit/About_Ma
 import Footer from "../../components/Footer/Footer";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import GameSwiper from "../../components/Gameswiper/GameSwiper";
+import GameDesignSwiper from "../../components/GameDesignSwiper/GameDesignSwiper";
 
 export default function Main() {
 
@@ -49,10 +50,10 @@ export default function Main() {
             <div id={'home'} className={style.entrance_section}>
 
                 {/*There are background Images*/}
-                <img src={layer} className={'w-full h-full contrast-150 object-fill max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
-                <img src={mobile_layer} className={'w-full h-full contrast-150 object-fill min-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
-                <img src={frame} className={'w-[85%] min-[1500px]:object-fill max-[600px]:hidden max-[1200px]:h-[70%] max-[1200px]:object-fill h-[70%] object-contain absolute top-32 left-0 right-0 m-auto'} alt={'web3'}/>
-                <img src={frame_mobile} className={'w-[95%] min-[600px]:hidden h-3/4 object-fill absolute top-24 left-0 right-0 m-auto'} alt={'web3'}/>
+                <img src={layer} className={'w-full h-fit contrast-150 object-fill max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
+                <img src={mobile_layer} className={'w-full h-fit contrast-150 object-fill min-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
+                <img src={frame} className={'w-[85%] min-[1500px]:object-fill max-[600px]:hidden max-[1200px]:h-[70%] max-[1200px]:object-fill h-fit object-contain absolute top-32 left-0 right-0 m-auto'} alt={'web3'}/>
+                <img src={frame_mobile} className={'w-[95%] min-[600px]:hidden h-[70%] object-fill absolute top-24 left-0 right-0 m-auto'} alt={'web3'}/>
 
                 {/*Social Links*/}
                 <div className={'absolute bg-white/10 max-[600px]:top-[405px] top-80 max-[600px]:w-[60px] max-[600px]:h-[121px] w-16 h-48 flex flex-col items-center border-y border-r border-[#F80AFB] rounded-r'}>
@@ -63,7 +64,7 @@ export default function Main() {
 
                 {/*Demo button*/}
 
-                <div className={'w-auto flex flex-col max-[600px]:flex-col-reverse items-center absolute bottom-5 max-[600px]:bottom-24 max-[600px]:left-7 left-0 right-0 m-auto'}>
+                <div className={'w-auto flex flex-col max-[600px]:flex-col-reverse items-center absolute bottom-5 max-[600px]:bottom-32 max-[600px]:left-7 left-0 right-0 m-auto'}>
 
                     <span className={'max-[600px]:text-[17px] text-[25px] text-white'}>Soon available!</span>
 
@@ -92,16 +93,16 @@ export default function Main() {
 
 
             {/*Frame place / Second section*/}
-            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-12 mt-28 text-center'}>
+            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-12 min-[1700px]:mt-56 mt-32 text-center'}>
 
-                <p className={'max-[600px]:text-[34px] max-[600px]:leading-tight text-[44px] text-white'}>Martial Rabbits Game <span className={'text-[#F80AFB]'}>Trailer </span> </p>
+                <p className={'max-[600px]:text-[34px] max-[600px]:leading-tight text-[48px] text-white'}>Martial Rabbits Game <span className={'text-[#F80AFB]'}>Trailer </span> </p>
 
                 <p className={'min-[800px]:hidden px-4 text-[14px] text-white'}>Unique Blend of Combat, Adventures, and Social Interaction  </p>
 
 
                 <div className={' w-[80%] max-[600px]:w-[95%] max-[450px]:h-[250px] max-[500px]:h-[300px] max-[800px]:h-[400px] max-[1000px]:h-[500px] max-[1200px]:h-[600px] h-[700px] relative mt-10'}>
 
-                    <img className={'w-full h-full object-fill absolute top-0 left-0 brightness-110 '} src={FrameImage} alt={'Web3'}/>
+                    <img className={'w-full h-fit object-fill absolute top-0 left-0 brightness-110 '} src={FrameImage} alt={'Web3'}/>
 
                 </div>
 
@@ -109,14 +110,17 @@ export default function Main() {
 
 
             {/*About place / Third section*/}
-            <div id={'about'} className={'w-full h-auto min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:mt-20 mt-36 '}>
+            <div id={'about'} className={'w-full h-auto min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:mt-20 min-[1600px]:mt-52 min-[1700px]:mt-80 mt-36 '}>
 
-                <p className={'max-[1000px]:text-[35px] text-[44px]  tracking-[3px] text-white relative z-10 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
+                <div className={'-translate-y-8'}>
+                    <p className={'max-[1000px]:text-[35px] text-[48px]  tracking-[3px] text-white relative z-10 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
                         <span className={'text-[#F80AFB]'}>R</span>abbits
                     <img className={'w-20 h-20 object-contain absolute -right-6 top-0 -z-10'} src={chn} alt={'web3'}/>
                     </span>
-                </p>
-                <p className={'max-[1000px]:text-[14px] text-[25px] max-[600px]:tracking-[2px] tracking-[5px]  text-white z-10'}>The Best of Both Worlds </p>
+                    </p>
+                    <p className={'max-[1000px]:text-[14px] text-[25px] max-[600px]:tracking-[2px] tracking-[5px] mb- text-white z-10'}>The Best of Both Worlds </p>
+                </div>
+
 
                 <About_Martial_Rabbit/>
 
@@ -124,17 +128,23 @@ export default function Main() {
 
 
             {/*Game Designs / Fourth Section*/}
-            <div className={'w-full h-auto min-[1000px]:min-h-screen  flex flex-col items-center gap-4 mt-28 max-[1000px]:mt-12 '}>
+            <div className={'w-full h-auto min-[1000px]:min-h-screen min-[1450px]:mt-32 min-[1580px]:mt-52  min-[1650px]:mt-72 flex flex-col items-center mt-28 max-[1000px]:mt-12  '}>
 
-                <p className={'text-[40px] text-white'}>Game <span className={'text-[#F80AFB]'}>Design</span> </p>
+                <p className={'text-[48px] text-white'}>Game <span className={'text-[#F80AFB]'}>Design</span> </p>
 
                 <div className={'w-full h-[722px] max-[1000px]:h-auto flex flex-col items-center justify-start py-12 max-[1000px]:py-0 max-[1000px]:pb-28 relative max-[1000px]:mt-4 mt-12 '}>
 
-                    <img className={' max-[600px]:w-[90%] w-[70%] max-[600px]:h-2/4 h-3/4 object-fill  absolute top-0 left-0 right-0 m-auto '} src={back_layer} alt={'Web3'}/>
+                    <img className={' max-[500px]:w-[80%] w-[60%]  h-fit min-[1000px]:translate-x-10  absolute top-0 left-0 right-0 m-auto '} src={back_layer} alt={'Web3'}/>
 
-                    <div className={'w-full h-[430px] max-[600px]:h-[300px] flex flex-col items-center relative '}>
+                    <div className={'w-full h-[390px] max-[600px]:h-[300px] flex flex-col items-center relative mt-5 '}>
 
-                        <GameSwiper/>
+                        <div className={'max-[1000px]:hidden w-full h-full'}>
+                            <GameSwiper/>
+                        </div>
+                        <div className={'min-[1000px]:hidden w-full h-full'}>
+                            <GameDesignSwiper/>
+                        </div>
+
 
                     </div>
 
@@ -150,7 +160,7 @@ export default function Main() {
             {/*Token Allocation / sixth section*/}
             <div id={'tokenomics'} className={'w-full h-auto min-h-screen flex flex-col items-center gap-4 max-[600px]:-translate-y-16 mt-0 max-[1000px]:mt-20 '}>
 
-                <p className={'max-[1000px]:hidden text-[44px] text-white'}>Token  <span className={'text-[#F80AFB]'}>Allocation</span> </p>
+                <p className={'max-[1000px]:hidden text-[48px] text-white'}>Token  <span className={'text-[#F80AFB]'}>Allocation</span> </p>
                 <p className={'min-[1000px]:hidden text-[34px] text-white'}>Token  <br/> <span className={'text-[#F80AFB]'}>Allocation</span> </p>
 
                 <TokenAllocation/>
@@ -160,7 +170,7 @@ export default function Main() {
             {/*Roadmap / seventh section*/}
             <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-center max-[1000px]:justify-start gap-4 mt-0 max-[1000px]:mt-6 '}>
 
-                <p className={'max-[1000px]:text-[34px] text-[44px] tracking-[2px] text-white relative z-10'}>Road<span className={'text-[#00D2FF]'}>map</span> <img className={'w-20 h-20 object-contain absolute -left-8 -top-4 -z-10'} src={chn3} alt={'web3'}/> </p>
+                <p className={'max-[1000px]:text-[34px] text-[48px] tracking-[2px] text-white relative z-10'}>Road<span className={'text-[#00D2FF]'}>map</span> <img className={'w-20 h-20 object-contain absolute -left-8 -top-4 -z-10'} src={chn3} alt={'web3'}/> </p>
 
                 <div className={'w-full  h-[450px]  relative flex flex-col items-center max-[1000px]:mt-20 mt-12'}>
 
@@ -173,7 +183,7 @@ export default function Main() {
             {/*Team / eighth  section*/}
             <div id={'team'} className={'w-full h-auto min-h-screen flex flex-col items-center justify-start gap-4 mt-44 max-[450px]:mt-24  '}>
 
-                <p className={'max-[1000px]:text-[34px] text-[44px] tracking-[2px] text-white relative mb-14 z-10'}>Meet The <span className={'text-[#00D2FF]'}>Team!</span></p>
+                <p className={'max-[1000px]:text-[34px] text-[48px] tracking-[2px] text-white relative mb-14 z-10'}>Meet The <span className={'text-[#00D2FF]'}>Team!</span></p>
 
                 <Team/>
 

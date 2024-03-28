@@ -67,7 +67,7 @@ export default function GameDesignSwiper() {
     return<>
         <div className={'w-full h-full flex items-start gap-3 relative'}>
 
-            <div className={'w-full flex items-center justify-between absolute -bottom-44 max-[1000px]:-bottom-20 max-[1000px]:px-3 max-[1000px]:gap-4 px-24 '}>
+            <div className={'w-full flex items-center justify-between absolute -bottom-44 max-[1000px]:bottom-10 max-[1000px]:px-3 max-[1000px]:gap-4 px-24 z-10 '}>
 
                 <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
 
@@ -111,13 +111,13 @@ export default function GameDesignSwiper() {
                         spaceBetween: 10
                     },
                     1: {
-                        slidesPerView: 1,
+                        slidesPerView: 1.5,
                         spaceBetween: 10
                     }
                 }}
             >
-                {SLIDES.map((value, index)=> <SwiperSlide  className={'w-full h-full px-8'}>
-                    <img key={index} className={'w-full h-full object-cover'} src={value} alt={'web3'}/>
+                {SLIDES.map((value, index)=> <SwiperSlide  className={'w-full h-fit '}>
+                    <img key={index} className={'w-full h-fit s object-cover'} src={value} alt={'web3'}/>
                 </SwiperSlide>)}
             </Swiper>
 

@@ -7,7 +7,7 @@ import runnin_rabbit from "../../assets/gif/1fiRun(1Sec).gif";
 export default function TokenAllocation() {
 
     return<>
-        <div className={'w-full h-[937px] max-[500px]:h-[730px] relative flex max-[1000px]:flex-col max-[1000px]:justify-start items-center justify-center max-[1000px]:gap-4 max-[1150px]:gap-12 gap-24 overflow-hidden'}>
+        <div className={'w-full h-[937px] max-[500px]:h-[660px] relative flex max-[1000px]:flex-col max-[1000px]:justify-start items-center justify-center max-[1000px]:gap-4 max-[1150px]:gap-12 gap-24 overflow-hidden'}>
 
             <img className={'absolute top-0 h-full w-full left-0 object-fill'} src={backLayer} alt={'web3'}/>
 
@@ -81,7 +81,6 @@ export default function TokenAllocation() {
                     <p className={'text-[15px] text-white'}> Liquidity  <br/> <span className={'text-[20px] text-[#F80AFB]'}>7% </span> </p>
                     <p className={'text-[15px] text-white '}> Presale <br/> <span className={'text-[20px] text-[#F80AFB]'}> 23% </span></p>
                     <p className={'text-[15px] text-white '}> Seed <br/> <span className={'text-[20px] text-[#F80AFB]'}>6%</span> </p>
-                    <p className={'text-[15px] text-white '}> Development  <br/> <span className={'text-[20px] text-[#F80AFB]'}>7% </span> </p>
 
                 </div>
 

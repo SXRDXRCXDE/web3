@@ -129,7 +129,7 @@ export default function RoadMapSwiper() {
 
 
     return<>
-        <div className={'w-full h-full flex items-start gap-3 min-[700px]:pl-24 relative'}>
+        <div className={'w-full h-full flex items-start gap-3 max-[700px]:pr-14 min-[700px]:pl-24 relative'}>
 
             <div className={'absolute left-0 -bottom-20 max-[1000px]:-top-24 px-24 max-[1000px]:px-3 w-full flex flex-col items-center '}>
 
@@ -153,6 +153,7 @@ export default function RoadMapSwiper() {
                 minimumTouchDrag={80}
                 partialVisible
                 pauseOnHover
+                customTransition={'transform 500ms ease-in-out, opacity 500ms ease-in-out'}
                 renderArrowsWhenDisabled={false}
                 renderButtonGroupOutside={true}
                 renderDotsOutside={false}
@@ -160,19 +161,19 @@ export default function RoadMapSwiper() {
                 responsive={{
                     desktop: {
                         breakpoint: {
-                            max: 3000,
+                            max: 1580,
                             min: 1024
                         },
                         items: 3,
-                        partialVisibilityGutter: 30
+                        partialVisibilityGutter: 40
                     },
                     tablet: {
                         breakpoint: {
-                            max: 1300,
-                            min: 600// Добавляем новую точку останова для экранов меньше 1300px
+                            max: 3000,
+                            min: 1580// Добавляем новую точку останова для экранов меньше 1300px
                         },
-                        items: 1,
-                        partialVisibilityGutter: 60
+                        items: 4,
+                        partialVisibilityGutter: 40
                     },
                     mobile: {
                         breakpoint: {
@@ -196,7 +197,7 @@ export default function RoadMapSwiper() {
                 {Cards.map((value, B_index)=>
                         <div className={' max-[450px]:translate-x-10 max-[450px]:w-[300px] max-[450px]:h-[300px] w-[400px] h-[400px] flex flex-col items-center max-[450px]:px-7 max-[450px]:py-4 px-14 py-6  relative'}>
 
-                            <img className={'w-full h-full object-contain max-[450px]:object-fill absolute top-0 left-0 -z-10'} src={value.image} alt={'web3'}/>
+                            <img className={'w-full h-fit object-contain max-[450px]:object-fill absolute top-0 left-0 -z-10'} src={value.image} alt={'web3'}/>
                             <div className={'w-full h-full z-10'}>
 
                                 <div className={'w-full h-auto flex items-center justify-between max-[1000px]:mt-0 max-[1280px]:mt-8 '}>

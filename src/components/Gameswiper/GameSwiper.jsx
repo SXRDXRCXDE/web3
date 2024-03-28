@@ -64,7 +64,7 @@ export default function GameSwiper() {
     const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
         const { carouselState: { currentSlide } } = rest;
         return (
-            <div className="w-full flex items-center justify-between absolute -bottom-40 max-[600px]:-bottom-20 max-[1000px]:-bottom-12 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 ">
+            <div className="w-full flex items-center justify-between absolute -bottom-40 max-[600px]:-bottom-20 max-[1000px]:-bottom-12 min-[1550px]:-bottom-56 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 ">
 
                 <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
 
@@ -89,19 +89,19 @@ export default function GameSwiper() {
     };
 
     return<>
-        <div className={'w-full max-[600px]:h-[200px] h-[500px] flex relative overflow-visible '}>
+        <div className={'w-full max-[600px]:h-[150px] h-[500px] flex relative overflow-visible min-[1000px]:-translate-y-10 '}>
             <Carousel
-                additionalTransfrom={1}
+                additionalTransfrom={0}
                 arrows={false}
                 autoPlaySpeed={3000}
-                centerMode
+                centerMode={true}
                 className="w-full h-full relative"
-                containerClass=""
+                containerClass="w-full h-full"
                 dotListClass=""
-                draggable
+                draggable={true}
                 focusOnSelect={false}
                 infinite
-                itemClass=""
+                itemClass="mx-1 self-center h-full"
                 keyBoardControl
                 minimumTouchDrag={80}
                 pauseOnHover
@@ -113,30 +113,33 @@ export default function GameSwiper() {
                     desktop: {
                         breakpoint: {
                             max: 3000,
-                            min: 0
+                            min: 1000
                         },
                         items: 1,
                         partialVisibilityGutter: 40
                     },
+                    mobile: {
+                        breakpoint: {
+                            max: 1000,
+                            min: 0
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 5
+                    },
 
                 }}
-                rewind={false}
+                rewind={true}
                 rewindWithAnimation={false}
                 rtl={false}
                 shouldResetAutoplay
                 showDots={false}
-                sliderClass=""
+                sliderClass="max-[600px]:h-40 "
                 slidesToSlide={1}
+                partialVisible={false}
                 swipeable
             >
 
-                {SLIDES.map((value, index)=> <div className={` w-full h-full flex justify-center`}>
-
-                    <div  className={'w-full max-[600px]:h-[200px] h-[400px] max-[600px]:px-2 max-[600px]:py-5  px-8'}>
-                        <img key={index} className={'w-full h-full max-[600px]:w-[180px] max-[600px]:object-fill  object-contain'} src={value} alt={'web3'}/>
-                    </div>
-
-                </div>)}
+                {SLIDES.map((value, index)=> <img key={index} className={'min-[600px]:w-full h-full max-[600px]:w-full max-[600px]:scale-y-110 object-contain'} src={value} alt={'web3'}/>)}
             </Carousel>
 
             {ButtonGroup}

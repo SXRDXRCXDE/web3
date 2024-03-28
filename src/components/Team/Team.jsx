@@ -10,6 +10,8 @@ import {GrNext, GrPrevious} from "react-icons/gr";
 import next from "../../assets/img/icons/next.png";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation} from "swiper/modules";
+import prevImg from "../../assets/img/icons/prev.png";
+import nextImg from "../../assets/img/icons/next.png";
 
 export default function Team() {
 
@@ -35,6 +37,36 @@ export default function Team() {
             image : heroCard4,
         }
     ]
+
+    const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+        const { carouselState: { currentSlide } } = rest;
+        return (
+            <div className="w-full flex items-center justify-between absolute left-0 -bottom-44 max-[1000px]:-bottom-12 max-[450px]:-bottom-3 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 ">
+                {/*<div className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()} >Nihggga</div>*/}
+                {/*<div onClick={() => next()} >asdasddas</div>*/}
+                {/*<div onClick={() => goToSlide(currentSlide + 1)}> Go to any slide </div>*/}
+
+                <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
+
+                <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>
+
+                    <div style={{backgroundImage: `url(${prevImg})`}} onClick={() => previous()} className={style.next}>
+
+                        <GrPrevious />
+
+                    </div>
+                    <div style={{backgroundImage: `url(${nextImg})`}} onClick={() => next()} className={style.next}>
+
+                        <GrNext />
+
+                    </div>
+
+                </div>
+
+                <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
+            </div>
+        );
+    };
 
     return<>
         <div className={'w-full max-[1000px]:h-[800px] max-[450px]:h-[700px] h-[600px] flex flex-col items-center justify-center relative'}>
@@ -91,9 +123,9 @@ export default function Team() {
                     modules={[Navigation , Autoplay]}
                     // loop={true}
                     className={'w-full h-full'}
-                    spaceBetween={20}
+                    spaceBetween={5}
                     freeMode={true}
-                    slidesPerView={1}
+                    slidesPerView={1.25}
                     grabCursor={true}
                     centeredSlides={true}
                 >

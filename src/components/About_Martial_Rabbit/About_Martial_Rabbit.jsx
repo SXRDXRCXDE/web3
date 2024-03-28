@@ -3,6 +3,7 @@ import martial from "../../assets/img/layers/martial.png";
 import martial_mobile from "../../assets/img/layers/about_martial_mobile.png";
 import martial_rabbit from "../../assets/img/layers/martial_rabbit.png";
 import rabbithead from "../../assets/img/logo/rabbit_logo.png";
+import martial_big from "../../assets/img/layers/martial_big.png";
 
 export default function About_Martial_Rabbit() {
 
@@ -38,19 +39,19 @@ export default function About_Martial_Rabbit() {
     ]
 
     return<>
-        <div className={'w-full max-[600px]:h-[410px] min-[600px]:h-[722px] flex flex-col items-center justify-between py-12 max-[1000px]:px-0 px-16 relative '}>
+        <div className={'w-full max-[600px]:h-[410px] max-[1250px]:h-[450px] max-[1400px]:h-[600px] min-[1400px]:h-[705px] flex flex-col items-center justify-between py-12 max-[1000px]:px-0 px-16 relative '}>
 
-            <img className={'w-full h-full object-fill  absolute top-0 left-0 max-[1000px]:hidden'} src={martial} alt={'Web3'}/>
+            <img className={'w-full h-fit object-fill  absolute -top-44 left-0 max-[1000px]:hidden'} src={martial_big} alt={'Web3'}/>
             <img className={'w-full h-full object-fill  absolute top-0 left-0 min-[1000px]:hidden '} src={martial_mobile} alt={'Web3'}/>
-            <img className={'w-fit h-[878px] max-[600px]:h-[300px] max-[1000px]:h-[550px] object-cover max-[1000px]:translate-x-3 absolute min-[1000px]:bottom-[30px] max-[1000px]:right-0 max-[1000px]:left-0 max-[1000px]:m-auto max-[1200px]:-right-9 max-[1000px]:bottom-1 right-0 '} src={martial_rabbit} alt={'Web3'}/>
+            <img className={'w-fit h-[878px] min-[1450px]:hidden max-[600px]:h-[300px] max-[1000px]:h-[550px] object-cover max-[1000px]:translate-x-3 absolute min-[1000px]:bottom-[30px] max-[1000px]:right-0 max-[1000px]:left-0 max-[1000px]:m-auto max-[1200px]:-right-9 max-[1000px]:bottom-1 min-[1000px]:hidden right-0 '} src={martial_rabbit} alt={'Web3'}/>
 
-            <div className={'w-full h-full flex flex-col items-center justify-between z-10'}>
+            <div className={'w-full h-full min-[1450px]:mt-14  flex flex-col items-center justify-between z-10'}>
 
                 <div className={'w-96 h-20 max-[600px]:w-48 max-[600px]: max-[1000px]:w-60 rounded bg-[#F80AFB8A] max-[1000px]:border-black max-[1000px]:border-2 flex items-center justify-center text-center '}>
                     <span className={'text-[19px]  max-[600px]:text-[15px] max-[600px]:leading-[15px] max-[600px]:tracking-[0.3px] tracking-[5px] text-white min-[600px]:font-outline-2 '}>Free-To-Play and Play & Earn Experiences.</span>
                 </div>
 
-                <div className={'w-full h-auto flex flex-col items-center max-[1000px]:hidden gap-x-28 '}>
+                <div className={'w-full h-auto min-[1450px]:-translate-y-10 min-[1550px]:translate-y-5 min-[1650px]:translate-y-32 flex flex-col items-center max-[1000px]:hidden gap-x-28 '}>
 
                     <div className={'w-auto flex items-center gap-8'}>
 
