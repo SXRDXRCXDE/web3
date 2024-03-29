@@ -93,7 +93,7 @@ export default function Main() {
 
 
             {/*Frame place / Second section*/}
-            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-12 min-[1700px]:mt-56 mt-32 text-center'}>
+            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-12 min-[1700px]:mt-64 mt-32 text-center'}>
 
                 <p className={'max-[600px]:text-[34px] max-[600px]:leading-tight text-[48px] text-white'}>Martial Rabbits Game <span className={'text-[#F80AFB]'}>Trailer </span> </p>
 
