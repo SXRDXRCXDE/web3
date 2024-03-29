@@ -118,7 +118,7 @@ export default function Main() {
                     <img className={'w-20 h-20 object-contain absolute -right-6 top-0 -z-10'} src={chn} alt={'web3'}/>
                     </span>
                     </p>
-                    <p className={'max-[1000px]:text-[14px] text-[25px] max-[600px]:tracking-[2px] tracking-[5px] max-[600px]:translate-y-6 text-white z-10'}>The Best of Both Worlds </p>
+                    <p className={'max-[1000px]:text-[14px] text-[25px] max-[600px]:tracking-[2px] tracking-[5px] min-[1600px]:translate-y-4 max-[600px]:translate-y-6 text-white z-10'}>The Best of Both Worlds </p>
                 </div>
 
 
