@@ -52,7 +52,7 @@ export default function Main() {
                 {/*There are background Images*/}
                 <img src={layer} className={'w-full h-fit contrast-150 object-fill max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
                 <img src={mobile_layer} className={'w-full h-fit contrast-150 object-fill min-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
-                <img src={frame} className={'w-[85%] min-[1500px]:object-fill max-[600px]:hidden max-[1200px]:h-[70%] max-[1200px]:object-fill h-fit object-contain absolute top-32 left-0 right-0 m-auto'} alt={'web3'}/>
+                <img src={frame} className={'w-[85%] min-[1500px]:object-fill max-[600px]:hidden  max-[1200px]:object-fill h-fit object-contain absolute top-32 left-0 right-0 m-auto'} alt={'web3'}/>
                 <img src={frame_mobile} className={'w-[95%] min-[600px]:hidden h-[70%] object-fill absolute top-24 left-0 right-0 m-auto'} alt={'web3'}/>
 
                 {/*Social Links*/}
@@ -113,12 +113,12 @@ export default function Main() {
             <div id={'about'} className={'w-full h-auto min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:mt-20 min-[1600px]:mt-52 min-[1700px]:mt-80 mt-36 '}>
 
                 <div className={'-translate-y-8'}>
-                    <p className={'max-[1000px]:text-[35px] text-[48px]  tracking-[3px] text-white relative z-10 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
+                    <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[3px] text-white relative z-10 max-[600px]:mb-8 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
                         <span className={'text-[#F80AFB]'}>R</span>abbits
                     <img className={'w-20 h-20 object-contain absolute -right-6 top-0 -z-10'} src={chn} alt={'web3'}/>
                     </span>
                     </p>
-                    <p className={'max-[1000px]:text-[14px] text-[25px] max-[600px]:tracking-[2px] tracking-[5px] mb- text-white z-10'}>The Best of Both Worlds </p>
+                    <p className={'max-[1000px]:text-[14px] text-[25px] max-[600px]:tracking-[2px] tracking-[5px] max-[600px]:translate-y-6 text-white z-10'}>The Best of Both Worlds </p>
                 </div>
 
 
