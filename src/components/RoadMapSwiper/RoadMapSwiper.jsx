@@ -133,7 +133,7 @@ export default function RoadMapSwiper() {
 
             <div className={'absolute left-0 -bottom-20 max-[1000px]:-top-24 px-24 max-[1000px]:px-3 w-full flex flex-col items-center '}>
 
-                <div className={'text-white text-[18px]'}>From our humble origins to the grand unveiling, be a part of the Martial Rabbits Metaverse journey!</div>
+                <div className={'text-white text-[18px] max-[600px]:translate-y-16'}>From our humble origins to the grand unveiling, be a part of the Martial Rabbits Metaverse journey!</div>
 
             </div>
 

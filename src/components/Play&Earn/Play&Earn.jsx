@@ -99,7 +99,7 @@ export default function PlayEarn() {
                             <div key={index} className={` ${index===2? `-translate-x-3` : ``} max-[450px]:w-[305px] max-[1000px]:h-[500px] w-96  h-[585px] flex flex-col items-center justify-end relative mr-1 duration-300`}>
                                 <img className={'w-full h-full object-contain absolute bottom-0 -z-0'} src={value.img} alt={'web3'}/>
 
-                                <div className={` ${index===1? `ml-0.5 ${style.shapedrectangle} w-[95%] max-[450px]:w-[95%] max-[1000px]:mr-3.5 max-[1000px]:mr-6 max-[1000px]:w-[80%] max-[1000px]:self-center self-start max-[600px]:translate-x-[4.8px] max-[600px]:-translate-y-[4px] ` :`w-[99%] max-[450px]:w-[99.7%]`} duration-300 h-28 bg-white/5 backdrop-blur z-0 max-[450px]:mb-6 max-[1000px]:mb-0 max-[1000px]:w-[87%] mb-3 flex flex-col items-center leading-[20px]`}>
+                                <div className={` ${index===1? `ml-0.5 ${style.shapedrectangle} w-[95%] max-[450px]:w-[95%] max-[1000px]:mr-3.5 max-[1000px]:mr-6 max-[1000px]:w-[80%] max-[1000px]:self-center self-start max-[600px]:translate-x-[4.8px] max-[600px]:-translate-y-[0px] ` :`w-[99%] max-[450px]:w-[99.7%]`} duration-300 h-28 bg-white/5 backdrop-blur z-0 max-[450px]:mb-[26px] max-[1000px]:mb-0 max-[1000px]:w-[87%] mb-3 flex flex-col items-center leading-[20px]`}>
 
                                     <div className={' max-[1000px]:text-[18px] text-[20px] text-[#F80AFB] font-outline-2 mt-2 duration-300'}>{value.title}</div>
                                     <p className={'max-[1000px]:text-[14px] text-[16px] text-white font-outline-2 duration-300'}>{value.description}</p>

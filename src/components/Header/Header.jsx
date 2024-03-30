@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import style from "./style.module.css";
 
 import logo from "../../assets/img/logo/Logo.png";
-import {Link} from "react-router-dom";
 import {CgMenuRightAlt} from "react-icons/cg";
 import {AiOutlineClose} from "react-icons/ai";
+import header_layer from "../../assets/img/layers/header_layer.png";
 
 export default function Header() {
 
@@ -41,6 +41,8 @@ export default function Header() {
         <div className={style.container}>
 
             <div className={'w-full h-full relative flex flex-col items-center justify-center'}>
+
+                <img className={'min-[1000px]:hidden absolute top-0 left-0 w-full h-fit  object-contain'} src={header_layer} alt={'web3'}/>
 
                 <div className={'flex flex-row items-end gap-20 relative '}>
 

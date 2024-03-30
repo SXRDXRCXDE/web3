@@ -51,7 +51,7 @@ export default function About_Martial_Rabbit() {
                     <span className={'text-[19px]  max-[600px]:text-[15px] max-[600px]:leading-[15px] max-[600px]:tracking-[0.3px] tracking-[5px] text-white min-[600px]:font-outline-2 '}>Free-To-Play and Play & Earn Experiences.</span>
                 </div>
 
-                <div className={'w-full h-auto min-[1450px]:-translate-y-10 min-[1550px]:translate-y-5 min-[1650px]:translate-y-32 flex flex-col items-center max-[1000px]:hidden gap-x-28 '}>
+                <div className={'w-full h-auto min-[1450px]:-translate-y-10 min-[1550px]:translate-y-5 min-[1650px]:translate-y-32 min-[1800px]:translate-y-64 flex flex-col items-center max-[1000px]:hidden gap-x-28 '}>
 
                     <div className={'w-auto flex items-center gap-8'}>
 

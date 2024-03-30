@@ -16,10 +16,10 @@ export default function Subscribe() {
 
                 <img className={'w-full h-fit  max-[1000px]:w-fit max-[1000px]:hidden absolute top-0 left-0 '} src={footer_layer} alt={'web3'}/>
                 <img className={'w-full h-96 max-[450px]:h-fit max-[450px]:translate-x-1 max-[1000px]:translate-x-0 object-fill absolute top-0 left-0 min-[1000px]:hidden '} src={footer_layer_mobile} alt={'web3'}/>
-                <img className={'max-[450px]:w-20 max-[450px]:right-40 w-60 max-[1000px]:w-40  absolute -bottom-[166px] min-[1600px]:-bottom-[280px] max-[450px]:-bottom-[137px] max-[1000px]:right-72 max-[1000px]:-bottom-60  max-[1100px]:right-[110px] min-[1600px]:right-[400px] right-[266px] z-20'} src={rabbit_footer} alt={'web3'}/>
+                <img className={'max-[450px]:w-20 max-[450px]:right-40 w-60 max-[1000px]:w-40  absolute -bottom-[166px] min-[1600px]:-bottom-[280px] min-[1800px]:-bottom-[256px] max-[450px]:-bottom-[137px] max-[1000px]:right-72 max-[1000px]:-bottom-60  max-[1100px]:right-[110px] min-[1600px]:right-[400px] right-[266px] z-20'} src={rabbit_footer} alt={'web3'}/>
 
-                <div className={' flex flex-col items-start max-[1000px]:ml-12 max-[1000px]:mt-4 mt-16 z-10 '}>
-                    <span className={'max-[1000px]:text-[15px] max-[1000px]:font-outline-2 text-[20px] text-[#F80AFB]'}>Get early access to our project</span>
+                <div className={' flex flex-col items-start max-[1000px]:ml-12 max-[1000px]:mt-4 mt-16 z-10  '}>
+                    <span className={'max-[1000px]:text-[15px] max-[1000px]:font-outline-2 text-[20px] min-[1800px]:mt-6 text-[#F80AFB]'}>Get early access to our project</span>
                     <div className={'max-[1000px]:leading-[28px]  leading-[48px] flex flex-col  -translate-x-5 '}>
                         <span className={'max-[450px]:translate-x-6 max-[1000px]:text-[30px] text-[60px] text-white max-[1000px]:font-outline-2'}>SUBSCRIBE</span>
                         <span className={'max-[1000px]:text-[30px] text-[60px] text-white max-[1000px]:font-outline-2 translate-x-20'}>TO OUR NEWS</span>

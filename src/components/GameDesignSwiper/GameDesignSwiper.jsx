@@ -25,7 +25,6 @@ import l from "../../assets/img/game_imgs/twelwe.jpg";
 import m from "../../assets/img/game_imgs/thirteen.png";
 import n from "../../assets/img/game_imgs/fourteen.png";
 import o from "../../assets/img/game_imgs/fifteen.png";
-import p from "../../assets/img/game_imgs/sixteen.png";
 import q from "../../assets/img/game_imgs/seventeen.png";
 import r from "../../assets/img/game_imgs/eighteen.png";
 import s from "../../assets/img/game_imgs/nineteen.png";
@@ -53,7 +52,6 @@ export default function GameDesignSwiper() {
         m,
         n,
         o,
-        p,
         q,
         r,
         s,
