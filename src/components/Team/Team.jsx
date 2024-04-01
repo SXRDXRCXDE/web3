@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import backlayer2 from "../../assets/img/layers/Background2Frame.png";
 import heroCard1 from "../../assets/img/hero_cards/firts_card_hero.png";
 import heroCard2 from "../../assets/img/hero_cards/second_card_hero.png";
 import heroCard3 from "../../assets/img/hero_cards/third_card_hero.png";
 import heroCard4 from "../../assets/img/hero_cards/fourth_card_hero.png";
+import heroCard1_hover from "../../assets/img/hero_cards/firts_card_hero_hover.png";
+import heroCard2_hover from "../../assets/img/hero_cards/second_card_hero_hover.png";
+import heroCard3_hover from "../../assets/img/hero_cards/third_card_hero_hover.png";
+import heroCard4_hover from "../../assets/img/hero_cards/fourth_card_hero_hover.png";
 import prev from "../../assets/img/icons/prev.png";
 import style from "../Play&Earn/style.module.css";
 import {GrNext, GrPrevious} from "react-icons/gr";
@@ -15,26 +19,32 @@ import nextImg from "../../assets/img/icons/next.png";
 
 export default function Team() {
 
+    const [hover,setHover] = useState(-1)
+
     const Members = [
         {
             name : "Sako",
             position : "Founder",
             image : heroCard1,
+            hover_image: heroCard1_hover
         },
         {
             name : "Grano",
             position : "Founder",
             image : heroCard2,
+            hover_image: heroCard2_hover
         },
         {
             name : "Nuri",
             position : "Head of Game Development",
             image : heroCard3,
+            hover_image: heroCard3_hover
         },
         {
             name : "Andre",
             position : "Head of Web3",
             image : heroCard4,
+            hover_image: heroCard4_hover
         }
     ]
 
@@ -75,9 +85,10 @@ export default function Team() {
 
             <div className={'flex gap-4 items-center mt-10 max-[1320px]:gap-0 duration-300 max-[1000px]:hidden'}>
 
-                {Members.map((value, index)=> <div key={index} className={' max-[1200px]:w-60 max-[1200px]:h-80 w-72 h-96 relative flex flex-col items-center justify-end duration-300'}>
+                {Members.map((value, index)=> <div onMouseEnter={()=>setHover(index)} onMouseLeave={()=>setHover(-1)} key={index} className={'cursor-pointer max-[1200px]:w-60 max-[1200px]:h-80 w-72 h-96 relative flex flex-col items-center justify-end duration-300'}>
 
-                    <img className={'absolute top-0 left-0'} src={value.image} alt={'web3'}/>
+                    <img className={` absolute top-0 left-0`} src={value.image} alt={'web3'}/>
+                    <img className={`${hover===index? `opacity-100` : `opacity-0`}  duration-300 absolute top-0 left-0`} src={value.hover_image} alt={'web3'}/>
 
                     <div className={'w-full h-1/2 z-10 flex flex-col items-center justify-start max-[1200px]:pt-10 pt-14 '}>
                         <span className={'text-[20px] text-white mt-1'}>{value.name}</span>
@@ -132,9 +143,10 @@ export default function Team() {
                     {Members.map((value, index)=>  <SwiperSlide  className={'w-full h-full  '}>
                         <div className={'w-full flex justify-center'}>
 
-                            <div key={index} className={' w-72 h-96 relative flex flex-col items-center justify-end '}>
+                            <div onMouseEnter={()=>setHover(index)} onMouseLeave={()=>setHover(-1)} key={index} className={' w-72 h-96 relative flex flex-col items-center justify-end '}>
 
                                 <img className={'absolute object-fill top-0 left-0'} src={value.image} alt={'web3'}/>
+                                <img className={` ${hover===index? `opacity-100` : `opacity-0` } duration-300 absolute object-fill top-0 left-0`} src={value.hover_image} alt={'web3'}/>
 
                                 <div className={'w-full h-1/2 z-10 flex flex-col items-center justify-start pt-14 '}>
                                     <span className={'text-[20px] text-white mt-1'}>{value.name}</span>

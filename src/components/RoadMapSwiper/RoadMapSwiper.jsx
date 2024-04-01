@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import style from "./style.module.css";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation} from "swiper/modules";
@@ -15,11 +15,14 @@ import holder2 from "../../assets/img/cards/holder2.png";
 import {IoRadioButtonOffSharp, IoRadioButtonOn} from "react-icons/io5";
 import prevImg from "../../assets/img/icons/prev.png";
 import nextImg from "../../assets/img/icons/next.png";
+import nextImg_hover from "../../assets/img/icons/next_hover.png";
+import prevImg_hover from "../../assets/img/icons/prev_hover.png";
 import Carousel from "react-multi-carousel";
 import "./custom.css";
 
 
 export default function RoadMapSwiper() {
+
 
     const Cards = [
         {
@@ -99,8 +102,9 @@ export default function RoadMapSwiper() {
 
     const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
         const { carouselState: { currentSlide } } = rest;
+        const [hover,setHover] = useState(-1);
         return (
-            <div className="w-full flex items-center justify-between absolute left-0 -bottom-44 max-[1000px]:-bottom-12 max-[450px]:-bottom-3 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 ">
+            <div className="w-full flex items-center justify-between absolute left-0 -bottom-44 max-[1000px]:-bottom-12 max-[450px]:-bottom-3 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 z-10 ">
                 {/*<div className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()} >Nihggga</div>*/}
                 {/*<div onClick={() => next()} >asdasddas</div>*/}
                 {/*<div onClick={() => goToSlide(currentSlide + 1)}> Go to any slide </div>*/}
@@ -109,15 +113,39 @@ export default function RoadMapSwiper() {
 
                 <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>
 
-                    <div style={{backgroundImage: `url(${prevImg})`}} onClick={() => previous()} className={style.next}>
-
+                    <div
+                        onMouseEnter={() => setHover(0)}
+                        onMouseLeave={() => setHover(-1)}
+                        style={{ backgroundImage: `url(${prevImg})` }}
+                        onClick={previous}
+                        className={style.next}
+                    >
                         <GrPrevious />
-
+                        <div
+                            style={{ backgroundImage: `url(${prevImg_hover})` }}
+                            className={`absolute top-0 left-0 w-full h-full bg-no-repeat bg-center bg-contain flex items-center justify-center ${
+                                hover === 0 ? 'opacity-100 transition-opacity duration-500' : 'opacity-0 transition-opacity duration-500'
+                            }`}
+                        >
+                            <GrPrevious />
+                        </div>
                     </div>
-                    <div style={{backgroundImage: `url(${nextImg})`}} onClick={() => next()} className={style.next}>
-
+                    <div
+                        onMouseEnter={() => setHover(1)}
+                        onMouseLeave={() => setHover(-1)}
+                        style={{ backgroundImage: `url(${nextImg})` }}
+                        onClick={next}
+                        className={style.next}
+                    >
                         <GrNext />
-
+                        <div
+                            style={{ backgroundImage: `url(${nextImg_hover})` }}
+                            className={`absolute top-0 left-0 w-full h-full bg-no-repeat bg-center bg-contain flex items-center justify-center ${
+                                hover === 1 ? 'opacity-100 transition-opacity duration-500' : 'opacity-0 transition-opacity duration-500'
+                            }`}
+                        >
+                            <GrNext />
+                        </div>
                     </div>
 
                 </div>

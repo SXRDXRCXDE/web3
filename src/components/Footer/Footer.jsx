@@ -10,23 +10,23 @@ export default function Footer() {
     const NavLinks = [
         {
             title: "Home",
-            to: "#"
+            to: "#home"
         },
         {
             title: "About Us",
-            to: "#"
+            to: "#about"
         },
         {
             title: "Tokenomics",
-            to: "#"
+            to: "#tokenomics"
         },
         {
             title: "Roadmap",
-            to: "#"
+            to: "#roadmap"
         },
         {
             title: "Team",
-            to: "#"
+            to: "#team"
         }
     ]
 
@@ -71,7 +71,7 @@ export default function Footer() {
 
                 <div className={'w-full flex items-end justify-between'}>
 
-                    <a href={'/'} className={'-translate-y-1 max-[500px]:w-44 max-[500px]:h-14 w-44 h-14 overflow-hidden flex items-center justify-center '}>
+                    <a href={'#home'} className={'-translate-y-1 max-[500px]:w-44 max-[500px]:h-14 w-44 h-14 overflow-hidden flex items-center justify-center '}>
 
                         <img className={'w-full h-full object-contain'} src={logo} alt={'Web3 Logo'}/>
 

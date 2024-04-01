@@ -1,0 +1,30 @@
+.circle {
+    fill: none;
+    stroke-width: 3.7;
+    stroke-linecap: square;
+}
+
+@media screen and (max-width: 600px){
+    .circle {
+        fill: none;
+        stroke-width: 1.7;
+        stroke-linecap: square;
+    }
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: none;
+    stroke-width: 3.8;
+}
+
+.circular-chart.orange .circle {
+    stroke: #F80AFB;
+}

@@ -23,6 +23,7 @@ import Footer from "../../components/Footer/Footer";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import GameSwiper from "../../components/Gameswiper/GameSwiper";
 import GameDesignSwiper from "../../components/GameDesignSwiper/GameDesignSwiper";
+import FrameVideo from "../../components/FrameVideo/FrameVideo";
 
 export default function Main() {
 
@@ -51,12 +52,12 @@ export default function Main() {
 
                 {/*There are background Images*/}
                 <img src={layer} className={'w-full h-fit contrast-150 object-fill max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
-                <img src={mobile_layer} className={'w-full h-fit contrast-150 object-fill min-[600px]:hidden absolute top-[89px] left-0'} alt={'web3'}/>
+                <img src={mobile_layer} className={'w-full h-fit contrast-150 object-fill min-[600px]:hidden absolute top-[96px] left-0'} alt={'web3'}/>
                 <img src={frame} className={'w-[85%] min-[1500px]:object-fill max-[600px]:hidden  max-[1200px]:object-fill h-fit object-contain absolute top-32 left-0 right-0 m-auto'} alt={'web3'}/>
-                <img src={frame_mobile} className={'w-[95%] min-[600px]:hidden h-[90%] object-fill absolute top-24 left-0 right-0 m-auto'} alt={'web3'}/>
+                <img src={frame_mobile} className={style.mobile_frame} alt={'web3'}/>
 
                 {/*Social Links*/}
-                <div className={'absolute bg-white/10 max-[600px]:top-[435px] top-80 max-[600px]:w-[60px] max-[600px]:h-[121px] w-16 h-48 flex flex-col items-center border-y border-r border-[#F80AFB] rounded-r'}>
+                <div className={style.social_links}>
                     {Social_links.map((value, index)=> <a key={index} href={value.url} className={'w-full h-1/3 flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[600px]:text-3xl text-4xl text-white'}>
                         {value.icon}
                     </a>)}
@@ -81,8 +82,8 @@ export default function Main() {
                 {/*Page title*/}
                 <div className={' max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:ml-0 w-auto h-auto z-10 ml-52 min-[1000px]:ml-20 min-[1500px]:ml-28'}>
                     <div className={'max-[1000px]:hidden'}>
-                        <p className={'text-[40px] text-white min-[1800px]:tracking-[8px] tracking-[1.5px]'}>A Pioneering <span className={'text-[#F80AFB]'}>AI-Powered  <br/> Web3 </span> Game Experience</p>
-                        <p className={'ml-12 text-[20px] text-start text-white min-[1800px]:tracking-[3px]'}>Unique Blend of Combat, Adventures, and <br/> Social Interaction</p>
+                        <p className={'text-[40px] text-white min-[1800px]:tracking-[8px] tracking-[1.5px] duration-300 hover:scale-110 hover:-translate-x-8 cursor-pointer'}>A Pioneering <span className={'text-[#F80AFB]'}>AI-Powered  <br/> Web3 </span> Game Experience</p>
+                        <p className={'ml-12 text-[20px] text-start text-white min-[1800px]:tracking-[3px] duration-300 hover:scale-110 hover:-translate-x-8 cursor-pointer'}>Unique Blend of Combat, Adventures, and <br/> Social Interaction</p>
                     </div>
                     <div className={'min-[1000px]:hidden leading-[30px]'}>
                         <p className={'text-[28px]  text-white'}>A Pioneering <span className={'text-[#F80AFB]'}>AI-<br/>Powered Web3 </span> Game Experience</p>
@@ -100,11 +101,7 @@ export default function Main() {
                 <p className={'min-[800px]:hidden px-4 text-[14px] max-[600px]:translate-y-8 text-white'}>Unique Blend of Combat, Adventures, and Social Interaction  </p>
 
 
-                <div className={' w-[80%] max-[600px]:w-[95%] max-[450px]:h-[250px] max-[500px]:h-[300px] max-[800px]:h-[400px] max-[1000px]:h-[500px] max-[1200px]:h-[600px] h-[700px] relative mt-10'}>
-
-                    <img className={'w-full h-fit object-fill absolute top-0 left-0 brightness-110 '} src={FrameImage} alt={'Web3'}/>
-
-                </div>
+                <FrameVideo/>
 
             </div>
 
@@ -136,7 +133,7 @@ export default function Main() {
 
                     <img className={' max-[500px]:w-[80%] w-[60%]  h-fit min-[1000px]:translate-x-10  absolute top-0 left-0 right-0 m-auto '} src={back_layer} alt={'Web3'}/>
 
-                    <div className={'w-full h-[390px] max-[600px]:h-[300px] flex flex-col items-center relative mt-5 '}>
+                    <div className={'w-full h-[390px] max-[600px]:h-[300px] flex flex-col items-center  mt-5 '}>
 
                         <div className={'max-[1000px]:hidden w-full h-full min-[1520px]:translate-y-14'}>
                             <GameSwiper/>

@@ -41,12 +41,14 @@ export default function Header() {
         <div className={style.container}>
 
             <div className={'w-full h-full relative flex flex-col items-center justify-center'}>
+                <div className={`${isOpen?`bg-[#0B0822]` : ``} min-[1000px]:hidden absolute top-0 left-0 w-full h-24   overflow-hidden z-50`}>
+                    <img className={` ${isOpen?`brightness-50 opacity-0` : ``} duration-500 w-full h-24 object-fill`} src={header_layer} alt={'web3'}/>
+                </div>
 
-                <img className={'min-[1000px]:hidden absolute top-0 left-0 w-full h-fit  object-contain'} src={header_layer} alt={'web3'}/>
 
                 <div className={'flex flex-row items-end gap-20 relative '}>
 
-                    <a href={'/'} className={'w-64 h-20 max-[1000px]:w-[160px] max-[1000px]:h-[50px] overflow-hidden flex items-center justify-center '}>
+                    <a href={'/'} className={'w-64 h-20 max-[1000px]:w-[160px] max-[1000px]:h-[50px] overflow-hidden flex items-center justify-center z-50 '}>
 
                         <img className={'w-full h-full object-contain'} src={logo} alt={'Web3 Logo'}/>
 
@@ -60,20 +62,20 @@ export default function Header() {
 
                 </div>
 
-                <div onClick={()=>setOpen(!isOpen)} className={'absolute top-11 right-4 text-4xl text-white min-[1000px]:hidden'}>
+                <div onClick={()=>setOpen(!isOpen)} className={'absolute top-11 right-4 text-4xl text-white min-[1000px]:hidden z-50'}>
                     <CgMenuRightAlt />
                 </div>
 
-                <div className={` ${isOpen? `right-0`:`-right-[100vw]`} top-0 duration-300 fixed w-full h-[330px] bg-[#0B0822] flex flex-col items-end min-[1000px]:hidden `}>
-                    <div className={'w-full h-full relative flex flex-col items-end relative px-10 pt-20'}>
+                <div className={` ${isOpen? `top-0`:`-top-[500px]`} z-30 left-0 duration-500 fixed w-full h-[340px] bg-[#0B0822] flex flex-col items-start min-[1000px]:hidden `}>
+                    <div className={'w-full h-full relative flex flex-col items-start relative px-10 pt-24'}>
 
-                        <div onClick={()=>setOpen(!isOpen)} className={'absolute top-4 right-4 text-4xl text-white '}>
-                            <AiOutlineClose />
-                        </div>
+                        {/*<div onClick={()=>setOpen(!isOpen)} className={'absolute top-4 right-4 text-4xl text-white '}>*/}
+                        {/*    <AiOutlineClose />*/}
+                        {/*</div>*/}
 
-                        <div className={'flex flex-col items-end gap-1.5 text-white'}>
+                        <div className={'flex flex-col items-start gap-1.5 text-white'}>
 
-                            {NavLinks.map((value, index)=> <a key={index}  className={'hover:text-[#F80AFB] duration-300 text-[20px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={`#${value.to}`}>{value.title}</a>)}
+                            {NavLinks.map((value, index)=> <a key={index} onClick={()=>setOpen(false)} className={'hover:text-[#F80AFB] duration-300 text-[20px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={`#${value.to}`}>{value.title}</a>)}
 
                         </div>
 

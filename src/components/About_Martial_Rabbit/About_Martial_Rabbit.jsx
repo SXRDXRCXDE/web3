@@ -55,7 +55,7 @@ export default function About_Martial_Rabbit() {
 
                     <div className={'w-auto flex items-center gap-8'}>
 
-                        {AboutMartialCards.slice(0,4).map((value, index)=> <div key={index} className={' pb-1 px-3 gap-3 max-[1200px]:gap-1 max-[1000px]:p-0 max-[1000px]:bg-transparent rounded m-3 flex bg-[#F80AFB8A] items-center'}>
+                        {AboutMartialCards.slice(0,4).map((value, index)=> <div key={index} className={'duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer pb-1 px-3 gap-3 max-[1200px]:gap-1 max-[1000px]:p-0 max-[1000px]:bg-transparent rounded m-3 flex bg-[#F80AFB8A] items-center'}>
 
                             <img className={'w-11 h-11 object-contain max-[1000px]:hidden'} src={rabbithead} alt={'rabbit logo'}/>
 
@@ -71,7 +71,7 @@ export default function About_Martial_Rabbit() {
 
                     <div className={'w-auto flex items-center gap-8'}>
 
-                        {AboutMartialCards.slice(4,8).map((value, index)=> <div key={index} className={' pb-1 px-3 max-[1200px]:gap-1 gap-3 max-[1000px]:p-0 max-[1000px]:bg-transparent rounded m-3 flex bg-[#F80AFB8A] items-center'}>
+                        {AboutMartialCards.slice(4,8).map((value, index)=> <div key={index} className={' duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer pb-1 px-3 max-[1200px]:gap-1 gap-3 max-[1000px]:p-0 max-[1000px]:bg-transparent rounded m-3 flex bg-[#F80AFB8A] items-center'}>
 
                             <img className={'w-11 h-11 object-contain max-[1000px]:hidden'} src={rabbithead} alt={'rabbit logo'}/>
 

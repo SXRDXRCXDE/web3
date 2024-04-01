@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Carousel from "react-multi-carousel";
 import a from "../../assets/img/game_imgs/first.png";
 import b from "../../assets/img/game_imgs/second.png";
@@ -28,6 +28,11 @@ import prevImg from "../../assets/img/icons/prev.png";
 import style from "../Play&Earn/style.module.css";
 import {GrNext, GrPrevious} from "react-icons/gr";
 import nextImg from "../../assets/img/icons/next.png";
+import prevImg_hover from "../../assets/img/icons/prev_hover.png";
+import nextImg_hover from "../../assets/img/icons/next_hover.png";
+import "./style.css";
+
+import {Image} from "antd";
 
 
 
@@ -59,8 +64,13 @@ export default function GameSwiper() {
         x,
     ]
 
+
+
     const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
         const { carouselState: { currentSlide } } = rest;
+
+        const [hover,setHover] = useState(-1)
+
         return (
             <div className="w-full flex items-center justify-between absolute -bottom-40 max-[600px]:-bottom-20 max-[1000px]:-bottom-12 min-[1550px]:-bottom-56 max-[1000px]:px-3 max-[1000px]:gap-3 px-24 ">
 
@@ -68,14 +78,18 @@ export default function GameSwiper() {
 
                 <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>
 
-                    <div style={{backgroundImage: `url(${prevImg})`}} onClick={() => previous()} className={style.next}>
+                    <div onMouseEnter={()=>setHover(0)} onMouseLeave={()=>setHover(-1)} style={{backgroundImage: `url(${prevImg})`}} onClick={() => previous()} className={style.next}>
 
                         <GrPrevious />
 
+                        <div style={{backgroundImage: `url(${prevImg_hover})`}} className={`${hover===0 ? `opacity-100` : `opacity-0` } bg-no-repeat bg-center bg-contain duration-500 flex items-center justify-center absolute top-0 left-0 w-full h-full`}><GrPrevious /></div>
+
                     </div>
-                    <div style={{backgroundImage: `url(${nextImg})`}} onClick={() => next()} className={style.next}>
+                    <div onMouseEnter={()=>setHover(1)} onMouseLeave={()=>setHover(-1)} style={{backgroundImage: `url(${nextImg})`}} onClick={() => next()} className={style.next}>
 
                         <GrNext />
+
+                        <div style={{backgroundImage: `url(${nextImg_hover})`}} className={`${hover===1 ? `opacity-100` : `opacity-0` } bg-no-repeat bg-center bg-contain duration-500 flex items-center justify-center absolute top-0 left-0 w-full h-full`}><GrNext /></div>
 
                     </div>
 
@@ -137,7 +151,11 @@ export default function GameSwiper() {
                 swipeable
             >
 
-                {SLIDES.map((value, index)=> <img key={index} className={'min-[600px]:w-full h-full max-[600px]:w-full max-[600px]:scale-y-110 object-contain'} src={value} alt={'web3'}/>)}
+                {SLIDES.map((value, index)=> <Image
+
+                    className={'min-[600px]:w-full h-full max-[600px]:w-full max-[600px]:scale-y-110 object-contain'}
+                    src={value}
+                />)}
             </Carousel>
 
             {ButtonGroup}

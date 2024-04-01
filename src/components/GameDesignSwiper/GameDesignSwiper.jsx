@@ -33,6 +33,7 @@ import u from "../../assets/img/game_imgs/twentyone.jpg";
 import v from "../../assets/img/game_imgs/twentytwo.png";
 import w from "../../assets/img/game_imgs/twentythree.png";
 import x from "../../assets/img/game_imgs/twentyfour.png";
+import {Image} from "antd";
 
 export default function GameDesignSwiper() {
 
@@ -115,7 +116,7 @@ export default function GameDesignSwiper() {
                 }}
             >
                 {SLIDES.map((value, index)=> <SwiperSlide  className={'w-full h-fit '}>
-                    <img key={index} className={'w-full h-fit s object-cover'} src={value} alt={'web3'}/>
+                    <Image key={index} className={'w-full h-fit  object-cover'} src={value}/>
                 </SwiperSlide>)}
             </Swiper>
 
