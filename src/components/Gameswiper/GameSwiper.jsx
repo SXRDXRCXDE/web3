@@ -31,12 +31,14 @@ import nextImg from "../../assets/img/icons/next.png";
 import prevImg_hover from "../../assets/img/icons/prev_hover.png";
 import nextImg_hover from "../../assets/img/icons/next_hover.png";
 import "./style.css";
-
-import {Image} from "antd";
-
+import {useDispatch} from "react-redux";
+import {setModalOpen} from "../../store/actions/isModalOpenActions";
+import {setCurrentIndex} from "../../store/actions/currentImageIndexaction";
 
 
 export default function GameSwiper() {
+
+    const dispatch = useDispatch()
 
     const SLIDES = [
         a,
@@ -151,10 +153,15 @@ export default function GameSwiper() {
                 swipeable
             >
 
-                {SLIDES.map((value, index)=> <Image
-
+                {SLIDES.map((value, index)=> <img
+                    key={index}
+                    onClick={() => {
+                        dispatch(setCurrentIndex(index))
+                        dispatch(setModalOpen(true));
+                    }}
                     className={'min-[600px]:w-full h-full max-[600px]:w-full max-[600px]:scale-y-110 object-contain'}
                     src={value}
+                    alt={"web3"}
                 />)}
             </Carousel>
 

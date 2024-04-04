@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import style from "./style.module.css";
 
 import layer from "../../assets/img/layers/entrance.png";
@@ -24,6 +24,8 @@ import Subscribe from "../../components/Subscribe/Subscribe";
 import GameSwiper from "../../components/Gameswiper/GameSwiper";
 import GameDesignSwiper from "../../components/GameDesignSwiper/GameDesignSwiper";
 import FrameVideo from "../../components/FrameVideo/FrameVideo";
+import {useSelector} from "react-redux";
+import ModalSlider from "../../components/ModalSlider/ModalSlider";
 
 export default function Main() {
 
@@ -41,9 +43,17 @@ export default function Main() {
             url : '#',
             icon : <RiTwitterXFill />,
         },
-    ]
+    ];
+
+    const isModalOpen = useSelector((state)=>state.isModalOpen.isModalOpen)
+    useEffect(()=>{
+        if (isModalOpen){
+            document.body.style.overflow = "hidden"
+        }
+    },[])
 
     return<>
+        {isModalOpen? <div className={'w-full h-full absolute z-20'}><ModalSlider/></div> : ``}
         <div className={'w-full h-auto min-h-screen bg-[#07071C] overflow-clip relative pb-8 '}>
 
 
@@ -107,7 +117,7 @@ export default function Main() {
 
 
             {/*About place / Third section*/}
-            <div id={'about'} className={'w-full h-auto min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:mt-20 min-[1600px]:mt-52 min-[1700px]:mt-[500px] mt-36 '}>
+            <div id={'about'} className={'w-full h-auto min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:mt-20 min-[1600px]:mt-36 min-[1700px]:mt-52 mt-36 '}>
 
                 <div className={'-translate-y-8'}>
                     <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[3px] text-white relative z-10 max-[600px]:mb-8 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
@@ -122,6 +132,7 @@ export default function Main() {
                 <About_Martial_Rabbit/>
 
             </div>
+
 
 
             {/*Game Designs / Fourth Section*/}

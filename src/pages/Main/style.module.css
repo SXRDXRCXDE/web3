@@ -1,6 +1,6 @@
 
 .entrance_section {
-    @apply w-full max-[1000px]:min-h-[99vh] min-[1000px]:min-h-[102vh] h-auto relative flex flex-col items-start justify-start max-[1000px]:pt-32 pt-52 ;
+    @apply w-full max-[1000px]:min-h-[800px] min-[1000px]:min-h-[102vh] h-auto relative flex flex-col items-start justify-start max-[1000px]:pt-32 pt-52 ;
 }
 
 .demo_button {
@@ -8,17 +8,17 @@
 }
 
 .mobile_frame {
-    @apply w-[95%] min-[600px]:hidden h-[90%] object-fill absolute top-24 left-0 right-0 m-auto;
+    @apply w-[95%] min-[600px]:hidden h-[85%] object-fill absolute top-24 left-0 right-0 m-auto;
 }
 
-@media screen and (min-device-height: 800px) {
-    .mobile_frame {
-        @apply h-[700px]
-    }
-}
+/*@media screen and (min-device-height: 800px) {*/
+/*    .mobile_frame {*/
+/*        @apply h-[700px]*/
+/*    }*/
+/*}*/
 
 .social_links {
-    @apply absolute bg-white/10 max-[600px]:top-[435px] top-80 max-[600px]:w-[60px] max-[600px]:h-[121px] w-16 h-48 flex flex-col items-center border-y border-r border-[#F80AFB] rounded-r ;
+    @apply absolute bg-white/10 max-[600px]:top-[450px] top-80 max-[600px]:w-[60px] max-[600px]:h-[121px] w-16 h-48 flex flex-col items-center border-y border-r border-[#F80AFB] rounded-r ;
 }
 
 /*@media screen and (max-device-height:950px ){*/
@@ -27,45 +27,8 @@
 /*    }*/
 /*}*/
 
-@media screen and (max-device-height:950px ){
-    .social_links {
-        @apply top-[465px]
-    }
-}
-
-@media screen and (max-device-height:800px ){
-    .social_links {
-        @apply top-[460px]
-    }
-}
-
-
-@media screen and (max-device-height:750px ){
-    .social_links {
-        @apply top-[440px]
-    }
-}
-
-@media screen and (max-device-height:720px ){
-    .social_links {
-        @apply top-[420px]
-    }
-}
-
-@media screen and (max-device-height:670px ){
-    .social_links {
-        @apply top-[390px]
-    }
-}
-
-@media screen and (max-device-height:630px ){
-    .social_links {
-        @apply top-[375px]
-    }
-}
-
-@media screen and (max-device-height:610px ){
-    .social_links {
-        @apply top-[360px]
-    }
-}
+/*@media screen and (max-device-height:950px ){*/
+/*    .social_links {*/
+/*        @apply top-[465px]*/
+/*    }*/
+/*}*/

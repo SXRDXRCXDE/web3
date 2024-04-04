@@ -33,9 +33,12 @@ import u from "../../assets/img/game_imgs/twentyone.jpg";
 import v from "../../assets/img/game_imgs/twentytwo.png";
 import w from "../../assets/img/game_imgs/twentythree.png";
 import x from "../../assets/img/game_imgs/twentyfour.png";
-import {Image} from "antd";
+import {setCurrentIndex} from "../../store/actions/currentImageIndexaction";
+import {setModalOpen} from "../../store/actions/isModalOpenActions";
+import {useDispatch} from "react-redux";
 
 export default function GameDesignSwiper() {
+    const dispatch = useDispatch()
 
     const SLIDES = [
         a,
@@ -116,7 +119,10 @@ export default function GameDesignSwiper() {
                 }}
             >
                 {SLIDES.map((value, index)=> <SwiperSlide  className={'w-full h-fit '}>
-                    <Image key={index} className={'w-full h-fit  object-cover'} src={value}/>
+                    <img onClick={() => {
+                        dispatch(setCurrentIndex(index))
+                        dispatch(setModalOpen(true));
+                    }} key={index} className={'w-full h-fit  object-cover'} src={value}/>
                 </SwiperSlide>)}
             </Swiper>
 
