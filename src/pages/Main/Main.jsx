@@ -46,14 +46,15 @@ export default function Main() {
     ];
 
     const isModalOpen = useSelector((state)=>state.isModalOpen.isModalOpen)
-    useEffect(()=>{
-        if (isModalOpen){
-            document.body.style.overflow = "hidden"
-        }
-    },[])
+
+    if (isModalOpen){
+        document.body.style.overflow = "hidden"
+    } else {
+        document.body.style.overflow = ""
+    }
 
     return<>
-        {isModalOpen? <div className={'w-full h-full absolute z-20'}><ModalSlider/></div> : ``}
+        {isModalOpen? <div className={'w-full h-full absolute z-20 overflow-hidden'}><ModalSlider/></div> : ``}
         <div className={'w-full h-auto min-h-screen bg-[#07071C] overflow-clip relative pb-8 '}>
 
 
