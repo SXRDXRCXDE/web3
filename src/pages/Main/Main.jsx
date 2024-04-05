@@ -76,7 +76,7 @@ export default function Main() {
 
                 {/*Demo button*/}
 
-                <div className={'w-auto flex flex-col max-[600px]:flex-col-reverse items-center absolute bottom-5 max-[600px]:-bottom-20 max-[600px]:left-7 left-0 right-0 m-auto'}>
+                <div className={'w-auto flex flex-col max-[600px]:flex-col-reverse items-center absolute bottom-5 max-[600px]:-bottom-1 max-[600px]:left-7 left-0 right-0 m-auto'}>
 
                     <span className={'max-[600px]:text-[17px] text-[25px] text-white'}>Soon available!</span>
 
@@ -105,7 +105,7 @@ export default function Main() {
 
 
             {/*Frame place / Second section*/}
-            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-60 min-[1700px]:mt-64 mt-32 text-center'}>
+            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-32 min-[1700px]:mt-64 mt-32 text-center'}>
 
                 <p className={'max-[600px]:text-[34px] max-[600px]:leading-tight max-[600px]:translate-y-8 text-[48px] text-white'}>Martial Rabbits Game <span className={'text-[#F80AFB]'}>Trailer </span> </p>
 
@@ -118,7 +118,7 @@ export default function Main() {
 
 
             {/*About place / Third section*/}
-            <div id={'about'} className={'w-full h-auto min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:mt-20 min-[1600px]:mt-36 min-[1700px]:mt-52 mt-36 '}>
+            <div id={'about'} className={'w-full h-auto pt-16 mt-28 min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:pt-20 min-[1600px]:pt-36 min-[1700px]:mt-32 min-[1700px]:pt-20 pt-36'}>
 
                 <div className={'-translate-y-8'}>
                     <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[3px] text-white relative z-10 max-[600px]:mb-8 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
@@ -167,7 +167,7 @@ export default function Main() {
 
 
             {/*Token Allocation / sixth section*/}
-            <div id={'tokenomics'} className={'w-full h-auto min-h-screen flex flex-col items-center gap-4 max-[600px]:-translate-y-16 mt-0 max-[1000px]:mt-20 '}>
+            <div id={'tokenomics'} className={'w-full h-auto min-h-screen flex flex-col items-center gap-4 max-[600px]:-translate-y-28 mt-10 pt-10 max-[1000px]:pt-10 '}>
 
                 <p className={'max-[1000px]:hidden text-[48px] text-white'}>Token  <span className={'text-[#F80AFB]'}>Allocation</span> </p>
                 <p className={'min-[1000px]:hidden text-[34px] text-white'}>Token  <br/> <span className={'text-[#F80AFB]'}>Allocation</span> </p>
@@ -177,7 +177,7 @@ export default function Main() {
             </div>
 
             {/*Roadmap / seventh section*/}
-            <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-center max-[1000px]:justify-start gap-4 mt-0 max-[1000px]:mt-6 '}>
+            <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-start pt-10 max-[600px]:-translate-y-12 max-[1000px]:justify-start gap-4 mt-0 max-[1000px]:mt-0 '}>
 
                 <p className={'max-[1000px]:text-[34px] text-[48px] max-[600px]:translate-y-10 tracking-[2px] text-white relative z-10'}>Road<span className={'text-[#00D2FF]'}>map</span> <img className={'w-20 h-20 object-contain absolute -left-8 -top-4 -z-10'} src={chn3} alt={'web3'}/> </p>
 
@@ -190,7 +190,7 @@ export default function Main() {
             </div>
 
             {/*Team / eighth  section*/}
-            <div id={'team'} className={'w-full h-auto min-h-screen flex flex-col items-center justify-start gap-4 mt-44 max-[450px]:mt-24  '}>
+            <div id={'team'} className={'w-full h-auto min-h-screen flex flex-col items-center justify-start gap-4 pt-12 mt-32 max-[450px]:pt-12  '}>
 
                 <p className={'max-[1000px]:text-[34px] text-[48px] tracking-[2px] text-white relative mb-14 z-10'}>Meet The <span className={'text-[#00D2FF]'}>Team!</span></p>
 
