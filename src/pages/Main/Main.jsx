@@ -118,7 +118,7 @@ export default function Main() {
 
 
             {/*About place / Third section*/}
-            <div id={'about'} className={'w-full h-auto pt-16 mt-28 min-[600px]:min-h-screen  flex flex-col items-center max-[600px]:pt-20 min-[1600px]:pt-36 min-[1700px]:mt-32 min-[1700px]:pt-20 pt-36'}>
+            <div id={'about'} className={'w-full h-auto pt-16 mt-28 min-[600px]:min-h-screen  flex  flex-col gi items-center max-[600px]:pt-20 min-[1600px]:pt-36 min-[1700px]:mt-32 min-[1700px]:pt-20 pt-36'}>
 
                 <div className={'-translate-y-8'}>
                     <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[3px] text-white relative z-10 max-[600px]:mb-8 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
