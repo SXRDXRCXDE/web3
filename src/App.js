@@ -2,6 +2,7 @@ import './App.css';
 import Header from "./components/Header/Header";
 import {Route, Routes} from "react-router-dom";
 import Main from "./pages/Main/Main";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path={'/'} element={<Main/>}/>
+        <Route path={'/privacy_policy'} element={<PrivacyPolicy/>}/>
       </Routes>
     </div>
   );

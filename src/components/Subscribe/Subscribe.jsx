@@ -38,7 +38,7 @@ export default function Subscribe() {
     }
 
     return<>
-        <div className={'w-full h-auto min-[1000px]:min-h-[65vh] max-[450px]:min-h-[350px] max-[1000px]:min-h-[400px]  flex flex-col items-center justify-start gap-4 mt-10 '}>
+        <div className={'w-full h-auto min-[1000px]:min-h-[65vh] max-[450px]:min-h-[350px] max-[1000px]:min-h-[400px]  flex flex-col items-center justify-start gap-4 max-[1000px]:mt-24 mt-10 '}>
 
             <div className={'max-[1000px]:w-full w-[85%] flex flex-col justify-start max-[1000px]:items-start items-start relative max-[1000px]:mt-6'}>
 

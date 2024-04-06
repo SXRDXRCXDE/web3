@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+.heading {
+    @apply text-[44px] max-[600px]:text-[28px] text-start ;
+}
+
+.content {
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    @apply text-[18px] text-start mt-7 max-[600px]:mt-4 leading-[20px] max-[600px]:text-[14px];
+}

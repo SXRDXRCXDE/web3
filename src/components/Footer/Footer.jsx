@@ -3,6 +3,7 @@ import logo from "../../assets/img/logo/Logo.png";
 import {FaInstagram, FaYoutube} from "react-icons/fa";
 import {RiTwitterXFill} from "react-icons/ri";
 import {IoLogoYoutube} from "react-icons/io";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
 
@@ -41,7 +42,7 @@ export default function Footer() {
         },
         {
             title: "Privacy & Policy",
-            to: "#"
+            to: "/privacy_policy"
         },
         {
             title: "Token Holder Agreement",
@@ -99,7 +100,8 @@ export default function Footer() {
 
                     <div className={'flex items-center max-[500px]:w-full max-[500px]:gap-0 max-[500px]:justify-between gap-5 text-white text-start'}>
 
-                        {footerLinks.map((value, index)=> <a key={index} className={` ${window.innerWidth<1000? index===0? `hidden` :``:`` } tracking-[0.5px] hover:text-[#F80AFB] duration-300 max-[500px]:text-[8px] text-[12px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] `} href={value.to}>{value.title}</a>)}
+                        {footerLinks.map((value, index)=> <Link onClick={()=>window.scrollTo(0,0)} key={index} className={` ${window.innerWidth<1000? index===0? `hidden` :``:`` } tracking-[0.5px] hover:text-[#F80AFB] duration-300 max-[500px]:text-[8px] text-[12px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] `} to={value.to}>{value.title}</Link>)}
+
 
                     </div>
 

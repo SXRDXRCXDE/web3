@@ -105,7 +105,7 @@ export default function Team() {
 
                     <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
 
-                    <div className={'flex items-center gap-5'}>
+                    <div className={'flex items-center gap-5 max-[600px]:gap-3'}>
 
                         <div style={{backgroundImage: `url(${prev})`}} className={` image-swiper-button-prev ${style.next}`}>
 

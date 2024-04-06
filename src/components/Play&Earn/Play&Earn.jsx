@@ -32,7 +32,7 @@ export default function PlayEarn() {
     ]
 
     return<>
-        <div className={'w-full h-auto max-[1200px]:min-h-[600px] duration-300 min-h-screen flex flex-col items-center gap-4 mt-4 max-[600px]:mt-0 max-[600px]:-translate-y-16 max-[1000px]:pb-24 min-[1500px]:mt-36 '}>
+        <div className={'w-full h-auto max-[1200px]:min-h-[600px] duration-300 min-h-screen flex flex-col items-center gap-4 mt-4 max-[600px]:mt-0 max-[600px]:-translate-y-8 max-[1000px]:pb-24 min-[1500px]:mt-36 '}>
 
             <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[2px] text-white relative mb-2 z-10'}>PLAY, EARN, <span className={'text-[#F80AFB] relative'}> CONNECT <img className={'w-20 h-20 object-contain absolute -right-4 -top-2 -z-10'} src={chn2} alt={'web3'}/> </span>  </p>
             <p className={'max-[1200px]:px-8 duration-300 max-[1000px]:px-3 max-[1000px]:text-[14px] text-[18px] text-white'}>Martial Rabbits seamlessly integrates multiple in-game avenues for a diverse and engaging experience, <br/> all available from the get-go at no cost.</p>

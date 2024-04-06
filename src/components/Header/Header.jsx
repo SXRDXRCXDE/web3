@@ -3,37 +3,40 @@ import style from "./style.module.css";
 
 import logo from "../../assets/img/logo/Logo.png";
 import {CgMenuRightAlt} from "react-icons/cg";
-import {AiOutlineClose} from "react-icons/ai";
 import header_layer from "../../assets/img/layers/header_layer.png";
+import {useLocation} from "react-router-dom";
 
 export default function Header() {
 
     const [isOpen,setOpen] = useState(false);
 
+    const route = useLocation()
+    console.log(route.pathname)
+
     const NavLinks = [
         {
             title: "Home",
-            to: "home"
+            to: "#home"
         },
         {
             title: "About Us",
-            to: "about"
+            to: "#about"
         },
         {
             title: "Tokenomics",
-            to: "tokenomics"
+            to: "#tokenomics"
         },
         {
             title: "Roadmap",
-            to: "roadmap"
+            to: "#roadmap"
         },
         {
             title: "Team",
-            to: "team"
+            to: "#team"
         },
         {
             title: "Litepaper",
-            to: "litepaper"
+            to: "https://martialrabbits-litepaper.gitbook.io/martial-rabbits-litepaper"
         },
     ]
 
@@ -41,7 +44,7 @@ export default function Header() {
         <div className={style.container}>
 
             <div className={'w-full h-full relative flex flex-col items-center justify-center'}>
-                <div className={`${isOpen?`bg-[#0B0822]` : ``} min-[1000px]:hidden absolute top-0 left-0 w-full h-24   overflow-hidden z-50`}>
+                <div className={`${isOpen?`bg-[#0B0822]` : ``} ${route.pathname=== `/privacy_policy`? `hidden` : ``} min-[1000px]:hidden absolute top-0 left-0 w-full h-24   overflow-hidden z-50`}>
                     <img className={` ${isOpen?`brightness-50 opacity-0` : ``} duration-500 w-full h-24 object-fill`} src={header_layer} alt={'web3'}/>
                 </div>
 
@@ -56,7 +59,7 @@ export default function Header() {
 
                     <div className={'flex items-center gap-10 text-white max-[1000px]:hidden'}>
 
-                        {NavLinks.map((value, index)=> <a key={index} className={'hover:text-[#F80AFB] duration-300 text-[18px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={`#${value.to}`}>{value.title}</a>)}
+                        {NavLinks.map((value, index)=> <a key={index} className={'hover:text-[#F80AFB] duration-300 text-[18px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={`${value.to}`}>{value.title}</a>)}
 
                     </div>
 
@@ -69,13 +72,9 @@ export default function Header() {
                 <div className={` ${isOpen? `top-0`:`-top-[500px]`} z-30 left-0 duration-500 fixed w-full h-[340px] bg-[#0B0822] flex flex-col items-start min-[1000px]:hidden `}>
                     <div className={'w-full h-full relative flex flex-col items-start relative px-10 pt-24'}>
 
-                        {/*<div onClick={()=>setOpen(!isOpen)} className={'absolute top-4 right-4 text-4xl text-white '}>*/}
-                        {/*    <AiOutlineClose />*/}
-                        {/*</div>*/}
-
                         <div className={'flex flex-col items-start gap-1.5 text-white'}>
 
-                            {NavLinks.map((value, index)=> <a key={index} onClick={()=>setOpen(false)} className={'hover:text-[#F80AFB] duration-300 text-[20px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={`#${value.to}`}>{value.title}</a>)}
+                            {NavLinks.map((value, index)=> <a key={index} onClick={()=>setOpen(false)} className={'hover:text-[#F80AFB] duration-300 text-[20px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '} href={`${value.to}`}>{value.title}</a>)}
 
                         </div>
 
