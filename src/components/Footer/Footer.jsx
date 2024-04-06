@@ -34,7 +34,7 @@ export default function Footer() {
     const footerLinks = [
         {
             title: "Litepaper",
-            to: "#"
+            to: "https://martialrabbits-litepaper.gitbook.io/martial-rabbits-litepaper"
         },
         {
             title: "Legal Disclaimer",
