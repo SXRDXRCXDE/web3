@@ -105,7 +105,7 @@ export default function Main() {
 
 
             {/*Frame place / Second section*/}
-            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[600px]:mt-32 min-[1700px]:mt-64 mt-32 text-center'}>
+            <div className={'w-full h-auto flex flex-col items-center gap-4 max-[390px]:mt-32 max-[440px]:mt-52 max-[600px]:mt-32 min-[1700px]:mt-64 mt-32 text-center'}>
 
                 <p className={'max-[600px]:text-[34px] max-[600px]:leading-tight max-[600px]:translate-y-8 text-[48px] text-white'}>Martial Rabbits Game <span className={'text-[#F80AFB]'}>Trailer </span> </p>
 
@@ -118,7 +118,7 @@ export default function Main() {
 
 
             {/*About place / Third section*/}
-            <div id={'about'} className={'w-full h-auto pt-16 mt-28 min-[600px]:min-h-screen  flex  flex-col  items-center max-[600px]:mt-16 max-[600px]:pt-10 min-[1600px]:pt-36 min-[1700px]:mt-32 min-[1700px]:pt-20 pt-36'}>
+            <div id={'about'} className={'w-full h-auto pt-16 mt-28 min-[600px]:min-h-screen  flex  flex-col  items-center  max-[600px]:mt-16 max-[600px]:pt-10 min-[1600px]:pt-36 min-[1700px]:mt-32 min-[1700px]:pt-20 pt-36'}>
 
                 <div className={'-translate-y-8'}>
                     <p className={'max-[1000px]:text-[35px] text-[48px] tracking-[3px] text-white relative z-10 max-[600px]:mb-8 mb-14'}>About <span className={'text-[#F80AFB]'}>M</span>artial <span className={'relative'}>
@@ -143,7 +143,7 @@ export default function Main() {
 
                 <div className={'w-full h-[722px] max-[1000px]:h-auto flex flex-col items-center justify-start py-12 max-[1000px]:py-0 max-[1000px]:pb-28 relative max-[1000px]:mt-4 mt-12 '}>
 
-                    <img className={' max-[500px]:w-[80%] w-[60%]  h-fit min-[1000px]:translate-x-10  absolute top-0 left-0 right-0 m-auto '} src={back_layer} alt={'Web3'}/>
+                    <img className={' max-[500px]:w-[80%] w-[60%] max-[500px]:max-h-[212px]  h-fit min-[1000px]:translate-x-10  absolute top-0 left-0 right-0 m-auto '} src={back_layer} alt={'Web3'}/>
 
                     <div className={'w-full h-[390px] max-[600px]:h-[300px] flex flex-col items-center  mt-5 '}>
 
@@ -177,7 +177,7 @@ export default function Main() {
             </div>
 
             {/*Roadmap / seventh section*/}
-            <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-start pt-10 max-[600px]:translate-y-5 max-[1000px]:justify-start gap-4 mt-0 max-[1000px]:mt-0 '}>
+            <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-start pt-10 max-[600px]:translate-y-0 max-[1000px]:justify-start gap-4 mt-0 max-[1000px]:mt-0 '}>
 
                 <p className={'max-[1000px]:text-[34px] text-[48px] max-[600px]:translate-y-10 tracking-[2px] text-white relative z-10'}>Road<span className={'text-[#00D2FF]'}>map</span> <img className={'w-20 h-20 object-contain absolute -left-8 -top-4 -z-10'} src={chn3} alt={'web3'}/> </p>
 

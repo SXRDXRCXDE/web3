@@ -43,7 +43,7 @@ export default function About_Martial_Rabbit() {
 
             <img className={'w-full h-fit object-fill  absolute -top-44 left-0 max-[1000px]:hidden'} src={martial_big} alt={'Web3'}/>
             <img className={'w-full h-full object-fill  absolute top-0 left-0 min-[1000px]:hidden '} src={martial_mobile} alt={'Web3'}/>
-            <img className={'w-fit h-[878px] min-[1450px]:hidden max-[600px]:h-[300px] max-[1000px]:h-[550px] object-cover max-[1000px]:translate-x-3 absolute min-[1000px]:bottom-[30px] max-[1000px]:right-0 max-[1000px]:left-0 max-[1000px]:m-auto max-[1200px]:-right-9 max-[1000px]:bottom-1 min-[1000px]:hidden right-0 '} src={martial_rabbit} alt={'Web3'}/>
+            <img className={'w-fit h-[878px] min-[1450px]:hidden max-[600px]:max-w-[130px] max-[600px]:max-h-[300px] max-[1000px]:h-[550px] min-[1000px]:object-cover max-[1000px]:translate-x-3 absolute min-[1000px]:bottom-[30px] max-[1000px]:right-0 max-[1000px]:left-0 max-[1000px]:m-auto max-[1200px]:-right-9 max-[1000px]:bottom-1 min-[1000px]:hidden right-0 '} src={martial_rabbit} alt={'Web3'}/>
 
             <div className={'w-full h-full min-[1450px]:mt-14  flex flex-col items-center justify-between z-10'}>
 

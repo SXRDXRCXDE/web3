@@ -237,7 +237,7 @@ export default function RoadMapSwiper() {
                 {Cards.map((value, B_index)=>
                         <div className={' max-[450px]:translate-x-10 max-[450px]:w-[300px] max-[450px]:h-[300px] w-[400px] h-[400px] flex flex-col items-center max-[450px]:px-7 max-[450px]:py-4 px-14 py-6  relative'}>
 
-                            <img className={'w-full h-fit object-contain max-[450px]:object-fill absolute top-0 left-0 -z-10'} src={value.image} alt={'web3'}/>
+                            <img className={'w-full h-fit max-[450px]:w-[300px] max-[450px]:h-[310px] object-contain max-[450px]:object-fill absolute top-0 left-0 -z-10'} src={value.image} alt={'web3'}/>
                             <div className={'w-full h-full z-10'}>
 
                                 <div className={'w-full h-auto flex items-center justify-between max-[1000px]:mt-0 max-[1280px]:mt-8 '}>

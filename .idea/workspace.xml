@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="745e3521-d2f0-4f10-83bc-f1a5a5fbd46d" name="Changes" comment="finallll">
+    <list default="true" id="745e3521-d2f0-4f10-83bc-f1a5a5fbd46d" name="Changes" comment="finallll test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RoadMapSwiper/RoadMapSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RoadMapSwiper/RoadMapSwiper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Subscribe/Subscribe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subscribe/Subscribe.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About_Martial_Rabbit/About_Martial_Rabbit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_Martial_Rabbit/About_Martial_Rabbit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameDesignSwiper/GameDesignSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameDesignSwiper/GameDesignSwiper.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
       <updated>1712382076897</updated>
       <workItem from="1712382079365" duration="6274000" />
       <workItem from="1712388415424" duration="694000" />
-      <workItem from="1712555517042" duration="1190000" />
+      <workItem from="1712555517042" duration="2247000" />
     </task>
     <task id="LOCAL-00001" summary="finalll">
       <created>1712388434768</created>
@@ -61,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712388815166</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finallll test">
+      <created>1712556912066</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712556912066</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +88,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finalll" />
     <MESSAGE value="finallll" />
-    <option name="LAST_COMMIT_MESSAGE" value="finallll" />
+    <MESSAGE value="finallll test" />
+    <option name="LAST_COMMIT_MESSAGE" value="finallll test" />
   </component>
 </project>

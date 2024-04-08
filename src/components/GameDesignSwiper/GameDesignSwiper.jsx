@@ -122,7 +122,7 @@ export default function GameDesignSwiper() {
                     <img onClick={() => {
                         dispatch(setCurrentIndex(index))
                         dispatch(setModalOpen(true));
-                    }} key={index} className={'w-full h-fit  object-cover'} src={value}/>
+                    }} key={index} className={'w-full h-fit max-w-[286px] max-h-[160px] object-contain'} src={value}/>
                 </SwiperSlide>)}
             </Swiper>
 
