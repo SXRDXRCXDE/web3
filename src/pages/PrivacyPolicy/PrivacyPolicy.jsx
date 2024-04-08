@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import style from "./style.module.css";
 import Footer from "../../components/Footer/Footer";
+import {useLocation} from "react-router-dom";
 
 
 export default function PrivacyPolicy() {
+
+    const route = useLocation()
+    console.log(route)
 
     const USE_INFORMATION = [
         'Provide, operate, and maintain our website',
@@ -14,6 +18,12 @@ export default function PrivacyPolicy() {
         'Send you emails',
         'Find and prevent fraud',
     ]
+
+    useEffect(()=>{
+        if (route.pathname==='/privacy_policy'){
+            window.scrollTo(0,0)
+        }
+    },[])
 
     return<>
         <div className={'w-full h-auto min-h-screen flex flex-col items-center bg-[#07071C] overflow-clip text-white pb-8'}>
