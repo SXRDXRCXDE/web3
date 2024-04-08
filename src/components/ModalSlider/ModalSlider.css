@@ -42,7 +42,7 @@
 }
 
 .modalContent img {
-    @apply w-full h-fit;
+    @apply w-full h-fit object-contain;
 }
 
 .close {

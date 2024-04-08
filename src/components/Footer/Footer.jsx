@@ -100,7 +100,7 @@ export default function Footer() {
 
                     <div className={'flex items-center max-[500px]:w-full max-[500px]:gap-0 max-[500px]:justify-between gap-5 text-white text-start'}>
 
-                        {footerLinks.map((value, index)=> <Link onTouchStart={()=>window.scrollTo(0,0)} onClick={()=>window.scrollTo(0,0)} key={index} className={` ${window.innerWidth<1000? index===0? `hidden` :``:`` } tracking-[0.5px] hover:text-[#F80AFB] duration-300 max-[500px]:text-[8px] text-[12px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] `} to={value.to}>{value.title}</Link>)}
+                        {footerLinks.map((value, index)=> <Link onTouchEnd={()=>window.scrollTo(0,0)} onClick={()=>window.scrollTo(0,0)} key={index} className={` ${window.innerWidth<1000? index===0? `hidden` :``:`` } tracking-[0.5px] hover:text-[#F80AFB] duration-300 max-[500px]:text-[8px] text-[12px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] `} to={value.to}>{value.title}</Link>)}
 
 
                     </div>
