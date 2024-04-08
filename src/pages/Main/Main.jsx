@@ -167,7 +167,7 @@ export default function Main() {
 
 
             {/*Token Allocation / sixth section*/}
-            <div id={'tokenomics'} className={'w-full h-auto min-h-screen flex flex-col items-center gap-4 max-[600px]:-translate-y-4 mt-10 pt-10 max-[1000px]:pt-10 '}>
+            <div id={'tokenomics'} className={'w-full h-auto min-h-screen flex flex-col items-center gap-4 max-[600px]:-translate-y-4 mt-0 pt-10 max-[1000px]:pt-10 '}>
 
                 <p className={'max-[1000px]:hidden text-[48px] text-white'}>Token  <span className={'text-[#F80AFB]'}>Allocation</span> </p>
                 <p className={'min-[1000px]:hidden text-[34px] text-white'}>Token  <br/> <span className={'text-[#F80AFB]'}>Allocation</span> </p>
@@ -177,7 +177,7 @@ export default function Main() {
             </div>
 
             {/*Roadmap / seventh section*/}
-            <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-start pt-10 max-[600px]:translate-y-0 max-[1000px]:justify-start gap-4 mt-0 max-[1000px]:mt-0 '}>
+            <div id={'roadmap'} className={'w-full h-auto min-[1000px]:min-h-screen flex flex-col items-center justify-start pt-10 max-[600px]:translate-y-0 max-[1000px]:justify-start gap-4 mt-28 max-[1000px]:mt-0 '}>
 
                 <p className={'max-[1000px]:text-[34px] text-[48px] max-[600px]:translate-y-10 tracking-[2px] text-white relative z-10'}>Road<span className={'text-[#00D2FF]'}>map</span> <img className={'w-20 h-20 object-contain absolute -left-8 -top-4 -z-10'} src={chn3} alt={'web3'}/> </p>
 
@@ -190,7 +190,7 @@ export default function Main() {
             </div>
 
             {/*Team / eighth  section*/}
-            <div id={'team'} className={'w-full h-auto min-h-screen flex flex-col items-center justify-start gap-4 pt-12 mt-32 max-[450px]:mt-20 max-[450px]:pt-12  '}>
+            <div id={'team'} className={'w-full h-auto min-h-screen flex flex-col items-center justify-start gap-4 pt-12 mt-8 max-[450px]:mt-20 max-[450px]:pt-12  '}>
 
                 <p className={'max-[1000px]:text-[34px] text-[48px] tracking-[2px] text-white relative mb-14 z-10'}>Meet The <span className={'text-[#00D2FF]'}>Team!</span></p>
 
