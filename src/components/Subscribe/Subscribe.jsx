@@ -43,7 +43,7 @@ export default function Subscribe() {
             <div className={'max-[1000px]:w-full w-[85%] flex flex-col justify-start max-[1000px]:items-start items-start relative max-[1000px]:mt-6'}>
 
                 <img className={'w-full h-fit  max-[1000px]:w-fit max-[1000px]:hidden absolute top-0 left-0 '} src={footer_layer} alt={'web3'}/>
-                <img className={'w-full h-96 max-[450px]:h-fit max-[450px]:translate-x-1 max-[1000px]:translate-x-0 object-fill absolute top-0 left-0 min-[1000px]:hidden '} src={footer_layer_mobile} alt={'web3'}/>
+                <img className={'w-full h-fit max-[450px]:max-h-[266px] max-[450px]:translate-x-1 max-[1000px]:translate-x-0 object-fill absolute top-0 left-0 min-[1000px]:hidden '} src={footer_layer_mobile} alt={'web3'}/>
                 <img className={'max-[450px]:w-20 max-[450px]:right-40 w-60 max-[1000px]:w-40  absolute -bottom-[166px] min-[1600px]:-bottom-[280px] min-[1800px]:-bottom-[256px] max-[450px]:-bottom-[137px] max-[1000px]:right-72 max-[1000px]:-bottom-60  max-[1100px]:right-[110px] min-[1600px]:right-[400px] right-[266px] z-20'} src={rabbit_footer} alt={'web3'}/>
 
                 <div className={' flex flex-col items-start max-[1000px]:ml-12 max-[1000px]:mt-4 mt-16 z-10  '}>

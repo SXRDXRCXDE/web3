@@ -63,7 +63,7 @@ export default function Main() {
 
                 {/*There are background Images*/}
                 <img src={layer} className={'w-full h-fit contrast-150 object-fill max-[600px]:hidden absolute top-0 left-0'} alt={'web3'}/>
-                <img src={mobile_layer} className={'w-full h-fit contrast-150 object-fill min-[600px]:hidden absolute top-[96px] left-0'} alt={'web3'}/>
+                <img src={mobile_layer} className={'w-full h-fit max-h-[850px] contrast-150 object-fill min-[600px]:hidden absolute top-[96px] left-0'} alt={'web3'}/>
                 <img src={frame} className={'w-[85%] min-[1500px]:object-fill max-[600px]:hidden  max-[1200px]:object-fill h-fit object-contain absolute top-32 left-0 right-0 m-auto'} alt={'web3'}/>
                 <img src={frame_mobile} className={style.mobile_frame} alt={'web3'}/>
 

@@ -98,6 +98,18 @@ export default function RoadMapSwiper() {
                 "Marketing 2.0",
             ]
         },
+        {
+            title : "Milestone 7",
+            number : "Q4 2025",
+            image: holder2,
+            extra_infos : [
+                "Full Game Release",
+                "Scaling Reward System",
+                "Game Update",
+                "Tournaments",
+                "Continuous Development",
+            ]
+        },
     ]
 
     const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
