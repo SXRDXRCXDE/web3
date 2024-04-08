@@ -16,23 +16,23 @@ export default function Header() {
     const NavLinks = [
         {
             title: "Home",
-            to: "#home"
+            to: "/#home"
         },
         {
             title: "About Us",
-            to: "#about"
+            to: "/#about"
         },
         {
             title: "Tokenomics",
-            to: "#tokenomics"
+            to: "/#tokenomics"
         },
         {
             title: "Roadmap",
-            to: "#roadmap"
+            to: "/#roadmap"
         },
         {
             title: "Team",
-            to: "#team"
+            to: "/#team"
         },
         {
             title: "Litepaper",

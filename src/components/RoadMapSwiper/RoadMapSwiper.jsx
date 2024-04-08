@@ -1,13 +1,9 @@
 import React, {useState} from "react";
 import style from "./style.module.css";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Navigation} from "swiper/modules";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import prev from "../../assets/img/icons/prev.png";
-import next from "../../assets/img/icons/next.png";
 import {GrNext, GrPrevious} from "react-icons/gr";
 
 import holder from "../../assets/img/cards/card.png";
