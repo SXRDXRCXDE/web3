@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './ModalSlider.css';
 import { useDispatch, useSelector } from "react-redux";
 import a from "../../assets/img/game_imgs/first.png";
@@ -27,6 +27,13 @@ import x from "../../assets/img/game_imgs/twentyfour.png";
 import {setModalOpen} from "../../store/actions/isModalOpenActions";
 import {setCurrentIndex} from "../../store/actions/currentImageIndexaction";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import { useSwiper } from 'swiper/react';
+
 
 const ModalSlider = () => {
     const dispatch = useDispatch();
@@ -39,17 +46,7 @@ const ModalSlider = () => {
         dispatch(setModalOpen(false));
     };
 
-    const nextSlide = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex === SLIDES.length - 1 ? 0 : prevIndex + 1));
-        dispatch(setCurrentIndex(currentIndex));
-    };
-
-    const prevSlide = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? SLIDES.length - 1 : prevIndex - 1));
-        dispatch(setCurrentIndex(currentIndex));
-    };
-
-
+    const swiperRef = useRef(null); // Создаем ref для Swiper
 
     const SLIDES = [
         a,
@@ -85,14 +82,43 @@ const ModalSlider = () => {
     },[SLIDES])
     console.log(currentImageIndex)
 
+    const swiper = useSwiper();
+
+    const nextSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.slideNext(); // Используем slideNext
+        }
+    };
+
+    const prevSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.slidePrev(); // Используем slidePrev
+        }
+    };
+
     return (
         <div className="modalSlider">
             <div className={`modal ${isModalOpen ? 'open' : ''}`}>
                 <span className="close" onClick={closeModal}>&times;</span>
                 <div className="modalContent">
-                    <img src={SLIDES[currentIndex]} alt={`Image ${currentIndex + 1}`} />
                     <div className="prev" onClick={prevSlide}>&#10094;</div>
                     <div className="next" onClick={nextSlide}>&#10095;</div>
+                    <Swiper
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        initialSlide={currentImageIndex}
+                        onSlideChange={(swiper) => console.log(swiper.activeIndex)}
+                        onSwiper={(swiper) => {
+                            // Установим объект Swiper в ref при его инициализации
+                            if (swiper) {
+                                swiperRef.current = swiper;
+                            }
+                        }}
+                    >
+                        {SLIDES.map((value, index)=> <SwiperSlide>
+                            <img key={index} src={value} alt={`Image `} />
+                        </SwiperSlide>)}
+                    </Swiper>
                 </div>
             </div>
         </div>
