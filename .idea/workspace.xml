@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="745e3521-d2f0-4f10-83bc-f1a5a5fbd46d" name="Changes" comment="finallll testtttttt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.jsx" afterDir="false" />
+    <list default="true" id="745e3521-d2f0-4f10-83bc-f1a5a5fbd46d" name="Changes" comment="finallll testttttttе">
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
       <workItem from="1712561832771" duration="1718000" />
       <workItem from="1712648729010" duration="208000" />
       <workItem from="1712657586411" duration="726000" />
-      <workItem from="1712813821107" duration="2015000" />
+      <workItem from="1712813821107" duration="2576000" />
     </task>
     <task id="LOCAL-00001" summary="finalll">
       <created>1712388434768</created>
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712562186739</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="finallll testttttttе">
+      <created>1712815913363</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712815913363</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +145,7 @@
     <MESSAGE value="finallll testtttt" />
     <MESSAGE value="finallll testttttt" />
     <MESSAGE value="finallll testtttttt" />
-    <option name="LAST_COMMIT_MESSAGE" value="finallll testtttttt" />
+    <MESSAGE value="finallll testttttttе" />
+    <option name="LAST_COMMIT_MESSAGE" value="finallll testttttttе" />
   </component>
 </project>
