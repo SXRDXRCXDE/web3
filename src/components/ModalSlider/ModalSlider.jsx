@@ -79,6 +79,26 @@ const ModalSlider = () => {
             setCurrentImageIndex(currentImageIndex)
             setActive(false)
         }
+
+        const handleKeyPress = (event) => {
+            // Если нажата клавиша влево (keyCode 37) и модальное окно открыто
+            if (event.keyCode === 37 && isModalOpen) {
+                prevSlide();
+            }
+            // Если нажата клавиша вправо (keyCode 39) и модальное окно открыто
+            else if (event.keyCode === 39 && isModalOpen) {
+                nextSlide();
+            }
+        };
+
+        // Добавляем слушатель событий для нажатия клавиш
+        window.addEventListener('keydown', handleKeyPress);
+
+        // Убираем слушатель событий при размонтировании компонента
+        return () => {
+            window.removeEventListener('keydown', handleKeyPress);
+        };
+
     },[SLIDES])
     console.log(currentImageIndex)
 

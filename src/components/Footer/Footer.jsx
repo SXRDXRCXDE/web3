@@ -4,6 +4,7 @@ import {FaInstagram, FaYoutube} from "react-icons/fa";
 import {RiTwitterXFill} from "react-icons/ri";
 import {IoLogoYoutube} from "react-icons/io";
 import {Link} from "react-router-dom";
+import pdf from "../../assets/pdf/MR-Legal Disclaimer.pdf";
 
 export default function Footer() {
 
@@ -38,7 +39,7 @@ export default function Footer() {
         },
         {
             title: "Legal Disclaimer",
-            to: "/#"
+            to: pdf
         },
         {
             title: "Privacy & Policy",
@@ -72,7 +73,7 @@ export default function Footer() {
 
                 <div className={'w-full flex items-end justify-between'}>
 
-                    <a href={'#home'} className={'-translate-y-1 max-[500px]:w-44 max-[500px]:h-14 w-44 h-14 overflow-hidden flex items-center justify-center '}>
+                    <a href={'/#home'} className={'-translate-y-1 max-[500px]:w-44 max-[500px]:h-14 w-44 h-14 overflow-hidden flex items-center justify-center '}>
 
                         <img className={'w-full h-full object-contain'} src={logo} alt={'Web3 Logo'}/>
 
@@ -85,7 +86,7 @@ export default function Footer() {
                     </div>
 
                     <div className={' flex items-center gap-3 '}>
-                        {Social_links.map((value, index)=> <a key={index} href={value.url} className={'flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[500px]:text-2xl text-3xl text-white'}>
+                        {Social_links.map((value, index)=> <a key={index} href={value.url} target={"_blank"} className={'flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[500px]:text-2xl text-3xl text-white'}>
                             {value.icon}
                         </a>)}
                     </div>
@@ -96,11 +97,11 @@ export default function Footer() {
 
                 <div className={'w-full flex max-[1000px]:flex-col-reverse max-[1000px]:items-start items-center justify-between'}>
 
-                    <div className={'text-[#F80AFB] text-[12px] tracking-[1px] max-[500px]:text-[8px] max-[450px]:translate-y-4'}>Ⓒ 2023 Martial Rabbits. All rigths reserved.</div>
+                    <div className={'text-[#F80AFB] text-[12px] tracking-[1px] max-[500px]:text-[8px] max-[450px]:translate-y-4'}>Ⓒ 2024 Martial Rabbits. All rigths reserved.</div>
 
                     <div className={'flex items-center max-[500px]:w-full max-[500px]:gap-0 max-[500px]:justify-between gap-5 text-white text-start'}>
 
-                        {footerLinks.map((value, index)=> <Link  onClick={()=>window.scrollTo(0,0)} key={index} className={` ${window.innerWidth<1000? index===0? `hidden` :``:`` } tracking-[0.5px] hover:text-[#F80AFB] duration-300 max-[500px]:text-[8px] text-[12px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] `} to={value.to}>{value.title}</Link>)}
+                        {footerLinks.map((value, index)=> <Link  target={"_blank"} key={index} className={` ${window.innerWidth<1000? index===0? `hidden` :``:`` } tracking-[0.5px] hover:text-[#F80AFB] duration-300 max-[500px]:text-[8px] text-[12px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] `} to={value.to}>{value.title}</Link>)}
 
 
                     </div>

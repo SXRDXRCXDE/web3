@@ -34,6 +34,10 @@ import "./style.css";
 import {useDispatch} from "react-redux";
 import {setModalOpen} from "../../store/actions/isModalOpenActions";
 import {setCurrentIndex} from "../../store/actions/currentImageIndexaction";
+import prev from "../../assets/img/icons/prev.png";
+import next from "../../assets/img/icons/next.png";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay, Navigation} from "swiper/modules";
 
 
 export default function GameSwiper() {
@@ -104,66 +108,69 @@ export default function GameSwiper() {
 
     return<>
         <div className={'w-full max-[600px]:h-[150px] h-[500px] flex relative overflow-visible min-[1000px]:-translate-y-10 '}>
-            <Carousel
-                additionalTransfrom={0}
-                arrows={false}
-                autoPlaySpeed={3000}
-                centerMode={true}
-                className="w-full h-full relative"
-                containerClass="w-full h-full"
-                dotListClass=""
-                draggable={true}
-                focusOnSelect={false}
-                infinite
-                itemClass="mx-1 self-center h-full min-[1800px]:px-3"
-                keyBoardControl
-                minimumTouchDrag={80}
-                pauseOnHover
-                renderArrowsWhenDisabled={false}
-                renderButtonGroupOutside={true}
-                renderDotsOutside={false}
-                customButtonGroup={<ButtonGroup/>}
-                responsive={{
-                    desktop: {
-                        breakpoint: {
-                            max: 3000,
-                            min: 1000
-                        },
-                        items: 1,
-                        partialVisibilityGutter: 40
-                    },
-                    mobile: {
-                        breakpoint: {
-                            max: 1000,
-                            min: 0
-                        },
-                        items: 1,
-                        partialVisibilityGutter: 5
-                    },
 
+            <div className={'w-full flex items-center justify-between absolute -bottom-44 max-[1000px]:bottom-10 max-[1000px]:px-3 max-[1000px]:gap-4 px-24 z-10 '}>
+
+                <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
+
+                <div className={'flex items-center max-[1000px]:gap-3 gap-5'}>
+
+                    <div style={{backgroundImage: `url(${prev})`}} className={` image-swiper-button-prev_ ${style.next}`}>
+
+                        <GrPrevious />
+
+                    </div>
+                    <div style={{backgroundImage: `url(${next})`}} className={` image-swiper-button-next_ ${style.next}`}>
+
+                        <GrNext />
+
+                    </div>
+
+                </div>
+
+                <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
+
+            </div>
+
+
+            <Swiper
+                navigation={{
+                    nextEl: ".image-swiper-button-next_",
+                    prevEl: ".image-swiper-button-prev_",
+                    disabledClass: "swiper-button-disabled"
                 }}
-                rewind={true}
-                rewindWithAnimation={false}
-                rtl={false}
-                shouldResetAutoplay
-                showDots={false}
-                sliderClass="max-[600px]:h-40 "
-                slidesToSlide={1}
-                partialVisible={false}
-                swipeable
+                modules={[Navigation , Autoplay]}
+                loop={true}
+                className={'w-full h-full'}
+                spaceBetween={20}
+                freeMode={true}
+                slidesPerView={3}
+                grabCursor={true}
+                centeredSlides={true}
+                breakpoints={{
+                    1000: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 10
+                    },
+                    1: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 10
+                    }
+                }}
             >
-
-                {SLIDES.map((value, index)=> <img
-                    key={index}
-                    onClick={() => {
-                        dispatch(setCurrentIndex(index))
-                        dispatch(setModalOpen(true));
-                    }}
-                    className={'min-[600px]:w-full h-full max-[600px]:w-full max-[600px]:scale-y-110 object-contain'}
-                    src={value}
-                    alt={"web3"}
-                />)}
-            </Carousel>
+                {SLIDES.map((value, index)=> <SwiperSlide  className={'w-full h-fit '}>
+                    <img
+                        key={index}
+                        onClick={() => {
+                            dispatch(setCurrentIndex(index))
+                            dispatch(setModalOpen(true));
+                        }}
+                        className={'min-[600px]:w-full h-full max-[600px]:w-full max-[600px]:scale-y-110 object-contain'}
+                        src={value}
+                        alt={"web3"}
+                    />
+                </SwiperSlide>)}
+            </Swiper>
 
             {ButtonGroup}
         </div>

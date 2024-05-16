@@ -85,7 +85,7 @@ export default function Team() {
 
             <div className={'flex gap-4 items-center mt-10 max-[1320px]:gap-0 duration-300 max-[1000px]:hidden'}>
 
-                {Members.map((value, index)=> <div onMouseEnter={()=>setHover(index)} onMouseLeave={()=>setHover(-1)} key={index} className={'cursor-pointer max-[1200px]:w-60 max-[1200px]:h-80 w-72 h-96 relative flex flex-col items-center justify-end duration-300'}>
+                {Members.map((value, index)=> <div onMouseEnter={()=>setHover(index)} onMouseLeave={()=>setHover(-1)} key={index} className={'cursor-default max-[1200px]:w-60 max-[1200px]:h-80 w-72 h-96 relative flex flex-col items-center justify-end duration-300'}>
 
                     <img className={` absolute top-0 left-0`} src={value.image} alt={'web3'}/>
                     <img className={`${hover===index? `opacity-100` : `opacity-0`}  duration-300 absolute top-0 left-0`} src={value.hover_image} alt={'web3'}/>

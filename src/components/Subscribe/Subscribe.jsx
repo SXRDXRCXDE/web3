@@ -5,6 +5,7 @@ import rabbit_footer from "../../assets/img/layers/rabbit_footer.png";
 import emailbutton from "../../assets/img/layers/button_shape.png";
 import emailbutton_mobile from "../../assets/img/layers/email_button_mobile.png";
 import button from "../../assets/img/layers/demo_button.png";
+import button_hover from "../../assets/img/layers/demo_button_hover.png";
 import {  message } from 'antd';
 
 
@@ -12,7 +13,8 @@ export default function Subscribe() {
 
     const [email, setEmail] = useState('');
     const [emailSent, setEmailSent] = useState(false);
-    const [loading,setLoading] = useState(false)
+    const [loading,setLoading] = useState(false);
+    const [hover,setHover] = useState(false);
 
     useEffect(() => {
         setEmailSent(!!email);
@@ -58,12 +60,15 @@ export default function Subscribe() {
 
                     <div style={{backgroundImage: `url(${emailbutton})`}} className={' min-[1200px]:-translate-x-3 max-[1000px]:hidden w-72 h-16 bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center text-[18px] text-white'}><input onChange={(e)=>setEmail(e.target.value)} type={"email"} placeholder={"Enter Email Address"} className={'w-full h-full outline-0 bg-transparent px-5 '}/></div>
                     <div style={{backgroundImage: `url(${emailbutton_mobile})`}} className={'max-[450px]:translate-x-2 max-[450px]:w-[135px] max-[450px]:h-12 min-[1000px]:hidden w-72 h-16 bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center max-[450px]:text-[12px] text-[18px] text-white'}><input onChange={(e)=>setEmail(e.target.value)} type={"email"} placeholder={"Enter Email Address"} className={'w-full h-full outline-0 bg-transparent px-5 '}/></div>
-                    <div onClick={()=>{
+                    <div onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} onClick={()=>{
                         emailSent? EmailHandler() : message.error('Enter your email')
-                    }} style={{backgroundImage: `url(${button})`}} className={' max-[450px]:w-[135px] max-[450px]:h-12 w-56 h-16 bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center max-[450px]:text-[12px] text-[18px] text-white cursor-pointer relative'}>
-                        Subscribe
+                    }} className={` max-[450px]:w-[135px] max-[450px]:h-12 w-56 h-16 bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center max-[450px]:text-[12px] text-[18px] text-white cursor-pointer relative`}>
+                        <span className={'z-10'}>Subscribe</span>
+                        <img src={button_hover} className={` ${hover? `opacity-100`:`opacity-0`} scale-105 duration-500 absolute left-0 top-0 w-full h-full object-contain `}/>
+                        <img src={button} className={` ${hover? `opacity-0`:`opacity-100`} duration-500 absolute left-0 top-0 w-full h-full object-contain `}/>
                         {loading? loadCircle: ``}
                     </div>
+
 
                 </div>
 

@@ -17,11 +17,11 @@ export default function TokenAllocation() {
 
             <div className={'w-auto max-[1350px]:h-[400px] h-[500px] z-10 flex flex-col items-start justify-between relative duration-300 max-[1000px]:hidden'}>
 
-                <p onMouseEnter={()=>setPercentFill(6)} className={'cursor-pointer duration-300 hover:scale-110 hover:translate-x-4 text-[20px] text-white translate-x-[83px]'}>Advisors <span className={'text-[25px] text-[#F80AFB]'}>6%</span> </p>
-                <p onMouseEnter={()=>setPercentFill(6)} className={'cursor-pointer duration-300 hover:scale-110 hover:translate-x-0 text-[20px] text-white translate-x-[41px]'}>Growth Fund <span className={'text-[25px] text-[#F80AFB]'}>6%</span> </p>
-                <p onMouseEnter={()=>setPercentFill(7)} className={'cursor-pointer duration-300 hover:scale-110 hover:-translate-x-5 text-[20px] text-white'}>Development <span className={'text-[25px] text-[#F80AFB]'}>7%</span> </p>
-                <p onMouseEnter={()=>setPercentFill(9)} className={'cursor-pointer duration-300 hover:scale-110 hover:translate-x-1 text-[20px] text-white translate-x-[41px]'}>Marketing <span className={'text-[25px] text-[#F80AFB]'}>9%</span> </p>
-                <p onMouseEnter={()=>setPercentFill(13)} className={'cursor-pointer duration-300 hover:scale-110 hover:translate-x-5 text-[20px] text-white translate-x-[83px]'}>Team <span className={'text-[25px] text-[#F80AFB]'}>13%</span> </p>
+                <p onMouseEnter={()=>setPercentFill(6)} className={'cursor-default duration-300 hover:scale-110 hover:translate-x-4 text-[20px] text-white translate-x-[83px]'}>Advisors <span className={'text-[25px] text-[#F80AFB]'}>6%</span> </p>
+                <p onMouseEnter={()=>setPercentFill(6)} className={'cursor-default duration-300 hover:scale-110 hover:translate-x-0 text-[20px] text-white translate-x-[41px]'}>Growth Fund <span className={'text-[25px] text-[#F80AFB]'}>6%</span> </p>
+                <p onMouseEnter={()=>setPercentFill(7)} className={'cursor-default duration-300 hover:scale-110 hover:-translate-x-5 text-[20px] text-white'}>Development <span className={'text-[25px] text-[#F80AFB]'}>7%</span> </p>
+                <p onMouseEnter={()=>setPercentFill(9)} className={'cursor-default duration-300 hover:scale-110 hover:translate-x-1 text-[20px] text-white translate-x-[41px]'}>Marketing <span className={'text-[25px] text-[#F80AFB]'}>9%</span> </p>
+                <p onMouseEnter={()=>setPercentFill(13)} className={'cursor-default duration-300 hover:scale-110 hover:translate-x-5 text-[20px] text-white translate-x-[83px]'}>Team <span className={'text-[25px] text-[#F80AFB]'}>13%</span> </p>
 
             </div>
 
@@ -57,11 +57,11 @@ export default function TokenAllocation() {
 
             <div className={'w-auto max-[1350px]:h-[400px] h-[500px] flex flex-col items-end justify-between z-10 duration-300 max-[1000px]:hidden'}>
 
-                <p onMouseEnter={()=>setPercentFill(20)} className={'cursor-pointer duration-300 hover:scale-110 hover:-translate-x-5 text-[20px] text-white -translate-x-[83px]'}> <span className={'text-[25px] text-[#F80AFB]'}>20%</span> Rewards </p>
-                <p onMouseEnter={()=>setPercentFill(23)} className={'cursor-pointer duration-300 hover:scale-110 hover:-translate-x-4 text-[20px] text-white -translate-x-[41px]'}> <span className={'text-[25px] text-[#F80AFB]'}>23%</span> Presale </p>
-                <p onMouseEnter={()=>setPercentFill(3)} className={'cursor-pointer duration-300 hover:scale-110 hover:translate-x-8 text-[20px] text-white'}> <span className={'text-[25px] text-[#F80AFB]'}>3%</span> Public Sale </p>
-                <p onMouseEnter={()=>setPercentFill(7)} className={'cursor-pointer duration-300 hover:scale-110 hover:-translate-x-0 text-[20px] text-white -translate-x-[41px]'}> <span className={'text-[25px] text-[#F80AFB]'}>7%</span> Liquidity </p>
-                <p onMouseEnter={()=>setPercentFill(6)} className={'cursor-pointer duration-300 hover:scale-110 hover:-translate-x-12 text-[20px] text-white -translate-x-[95px]'}> <span className={'text-[25px] text-[#F80AFB]'}>6%</span> Seed </p>
+                <p onMouseEnter={()=>setPercentFill(20)} className={'cursor-default duration-300 hover:scale-110 hover:-translate-x-5 text-[20px] text-white -translate-x-[83px]'}> <span className={'text-[25px] text-[#F80AFB]'}>20%</span> Rewards </p>
+                <p onMouseEnter={()=>setPercentFill(23)} className={'cursor-default duration-300 hover:scale-110 hover:-translate-x-4 text-[20px] text-white -translate-x-[41px]'}> <span className={'text-[25px] text-[#F80AFB]'}>23%</span> Presale </p>
+                <p onMouseEnter={()=>setPercentFill(3)} className={'cursor-default duration-300 hover:scale-110 hover:translate-x-8 text-[20px] text-white'}> <span className={'text-[25px] text-[#F80AFB]'}>3%</span> Public Sale </p>
+                <p onMouseEnter={()=>setPercentFill(7)} className={'cursor-default duration-300 hover:scale-110 hover:-translate-x-0 text-[20px] text-white -translate-x-[41px]'}> <span className={'text-[25px] text-[#F80AFB]'}>7%</span> Liquidity </p>
+                <p onMouseEnter={()=>setPercentFill(6)} className={'cursor-default duration-300 hover:scale-110 hover:-translate-x-12 text-[20px] text-white -translate-x-[95px]'}> <span className={'text-[25px] text-[#F80AFB]'}>6%</span> Seed </p>
 
             </div>
 

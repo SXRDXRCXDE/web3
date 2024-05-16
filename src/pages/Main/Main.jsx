@@ -32,16 +32,12 @@ export default function Main() {
 
     const Social_links = [
         {
-            url : '#',
+            url : 'https://www.youtube.com/watch?v=rxKtB16JDHw',
             icon : <FaYoutube />,
         },
         {
-            url : '#',
+            url : 'https://www.instagram.com/martialrabbits/',
             icon : <FaInstagram />,
-        },
-        {
-            url : '#',
-            icon : <RiTwitterXFill />,
         },
     ];
 
@@ -69,9 +65,12 @@ export default function Main() {
 
                 {/*Social Links*/}
                 <div className={style.social_links}>
-                    {Social_links.map((value, index)=> <a key={index} href={value.url} className={'w-full h-1/3 flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[600px]:text-3xl text-4xl text-white'}>
+                    {Social_links.map((value, index)=> <a key={index} target={"_blank"} href={value.url} className={'w-full h-1/3 flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[600px]:text-3xl text-4xl text-white'}>
                         {value.icon}
                     </a>)}
+                    <a className={'w-full h-1/3 flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[600px]:text-3xl text-4xl text-white'}>
+                        <RiTwitterXFill />
+                    </a>
                 </div>
 
                 {/*Demo button*/}
@@ -93,8 +92,8 @@ export default function Main() {
                 {/*Page title*/}
                 <div className={' max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:ml-0 w-auto h-auto z-10 ml-52 min-[1000px]:ml-20 min-[1500px]:ml-28'}>
                     <div className={'max-[1000px]:hidden'}>
-                        <p className={'text-[40px] text-white min-[1800px]:tracking-[8px] tracking-[1.5px] duration-300 hover:scale-110 hover:-translate-x-8 cursor-pointer'}>A Pioneering <span className={'text-[#F80AFB]'}>AI-Powered  <br/> Web3 </span> Game Experience</p>
-                        <p className={'ml-12 text-[20px] text-start text-white min-[1800px]:tracking-[3px] duration-300 hover:scale-110 hover:-translate-x-8 cursor-pointer'}>Unique Blend of Combat, Adventures, and <br/> Social Interaction</p>
+                        <p className={'text-[40px] text-white min-[1800px]:tracking-[8px] tracking-[1.5px] duration-300 hover:scale-110 hover:-translate-x-8 cursor-default'}>A Pioneering <span className={'text-[#F80AFB]'}>AI-Powered  <br/> Web3 </span> Game Experience</p>
+                        <p className={'ml-12 text-[20px] text-start text-white min-[1800px]:tracking-[3px] duration-300 hover:scale-110 hover:-translate-x-8 cursor-default'}>Unique Blend of Combat, Adventures, and <br/> Social Interaction</p>
                     </div>
                     <div className={'min-[1000px]:hidden leading-[30px]'}>
                         <p className={'text-[28px]  text-white'}>A Pioneering <span className={'text-[#F80AFB]'}>AI-<br/>Powered Web3 </span> Game Experience</p>

@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="745e3521-d2f0-4f10-83bc-f1a5a5fbd46d" name="Changes" comment="finallll testttttttе1">
+    <list default="true" id="3e741d4f-0fd5-4637-9261-790b4117da0d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About_Martial_Rabbit/About_Martial_Rabbit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_Martial_Rabbit/About_Martial_Rabbit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameDesignSwiper/GameDesignSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameDesignSwiper/GameDesignSwiper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gameswiper/GameSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gameswiper/GameSwiper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Subscribe/Subscribe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subscribe/Subscribe.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TokenAllocation/TokenAllocation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TokenAllocation/TokenAllocation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,145 +29,38 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2eiKhHr2T9KKlBZFw8DTqbhbkdR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2gY2haqy0heiSbKXTAYX7JDlbPl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="745e3521-d2f0-4f10-83bc-f1a5a5fbd46d" name="Changes" comment="" />
-      <created>1712382076897</created>
+      <changelist id="3e741d4f-0fd5-4637-9261-790b4117da0d" name="Changes" comment="" />
+      <created>1715860312582</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712382076897</updated>
-      <workItem from="1712382079365" duration="6274000" />
-      <workItem from="1712388415424" duration="694000" />
-      <workItem from="1712555517042" duration="4197000" />
-      <workItem from="1712561832771" duration="1718000" />
-      <workItem from="1712648729010" duration="208000" />
-      <workItem from="1712657586411" duration="726000" />
-      <workItem from="1712813821107" duration="2882000" />
+      <updated>1715860312582</updated>
+      <workItem from="1715860318237" duration="7180000" />
     </task>
-    <task id="LOCAL-00001" summary="finalll">
-      <created>1712388434768</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712388434768</updated>
-    </task>
-    <task id="LOCAL-00002" summary="finallll">
-      <created>1712388815166</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1712388815166</updated>
-    </task>
-    <task id="LOCAL-00003" summary="finallll test">
-      <created>1712556912066</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1712556912066</updated>
-    </task>
-    <task id="LOCAL-00004" summary="finallll testt">
-      <created>1712558039441</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712558039441</updated>
-    </task>
-    <task id="LOCAL-00005" summary="finallll testtt">
-      <created>1712558790472</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712558790472</updated>
-    </task>
-    <task id="LOCAL-00006" summary="finallll testttt">
-      <created>1712559097465</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712559097465</updated>
-    </task>
-    <task id="LOCAL-00007" summary="finallll testtttt">
-      <created>1712559297207</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1712559297207</updated>
-    </task>
-    <task id="LOCAL-00008" summary="finallll testttttt">
-      <created>1712559588535</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1712559588535</updated>
-    </task>
-    <task id="LOCAL-00009" summary="finallll testtttttt">
-      <created>1712562186739</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1712562186739</updated>
-    </task>
-    <task id="LOCAL-00010" summary="finallll testttttttе">
-      <created>1712815913363</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712815913363</updated>
-    </task>
-    <task id="LOCAL-00011" summary="finallll testttttttе1">
-      <created>1712816421036</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712816421036</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="finalll" />
-    <MESSAGE value="finallll" />
-    <MESSAGE value="finallll test" />
-    <MESSAGE value="finallll testt" />
-    <MESSAGE value="finallll testtt" />
-    <MESSAGE value="finallll testttt" />
-    <MESSAGE value="finallll testtttt" />
-    <MESSAGE value="finallll testttttt" />
-    <MESSAGE value="finallll testtttttt" />
-    <MESSAGE value="finallll testttttttе" />
-    <MESSAGE value="finallll testttttttе1" />
-    <option name="LAST_COMMIT_MESSAGE" value="finallll testttttttе1" />
   </component>
 </project>
