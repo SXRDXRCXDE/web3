@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e741d4f-0fd5-4637-9261-790b4117da0d" name="Changes" comment="last com">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gameswiper/GameSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gameswiper/GameSwiper.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,8 @@
       <option name="presentableId" value="Default" />
       <updated>1715860312582</updated>
       <workItem from="1715860318237" duration="7909000" />
-      <workItem from="1715937541731" duration="1611000" />
+      <workItem from="1715937541731" duration="1960000" />
+      <workItem from="1715971131546" duration="797000" />
     </task>
     <task id="LOCAL-00001" summary="last com">
       <created>1715870796391</created>
@@ -69,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715938494104</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="last com">
+      <created>1715939257560</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715939257560</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

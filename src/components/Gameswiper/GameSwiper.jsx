@@ -109,7 +109,7 @@ export default function GameSwiper() {
     return<>
         <div className={'w-full max-[600px]:h-[150px] h-[500px] flex relative overflow-visible min-[1000px]:-translate-y-10 '}>
 
-            <div className={'w-full flex items-center justify-between absolute -bottom-44 max-[1000px]:bottom-10 max-[1000px]:px-3 max-[1000px]:gap-4 px-24 z-10 '}>
+            <div className={'w-full flex items-center justify-between absolute -bottom-56 max-[1000px]:bottom-10 max-[1000px]:px-3 max-[1000px]:gap-4 px-24 z-10 '}>
 
                 <div className={'w-[40%] h-1 bg-[#F80AFB]'}></div>
 
@@ -171,8 +171,7 @@ export default function GameSwiper() {
                     />
                 </SwiperSlide>)}
             </Swiper>
-
-            {ButtonGroup}
+            {/*{ButtonGroup}*/}
         </div>
 
     </>
