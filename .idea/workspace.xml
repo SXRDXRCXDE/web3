@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e741d4f-0fd5-4637-9261-790b4117da0d" name="Changes" comment="">
+    <list default="true" id="3e741d4f-0fd5-4637-9261-790b4117da0d" name="Changes" comment="last com">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About_Martial_Rabbit/About_Martial_Rabbit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About_Martial_Rabbit/About_Martial_Rabbit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GameDesignSwiper/GameDesignSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameDesignSwiper/GameDesignSwiper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gameswiper/GameSwiper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gameswiper/GameSwiper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalSlider/ModalSlider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Subscribe/Subscribe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subscribe/Subscribe.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Team/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/Team.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TokenAllocation/TokenAllocation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TokenAllocation/TokenAllocation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +45,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715860312582</updated>
-      <workItem from="1715860318237" duration="7180000" />
+      <workItem from="1715860318237" duration="7909000" />
     </task>
+    <task id="LOCAL-00001" summary="last com">
+      <created>1715870796391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715870796391</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last com" />
+    <option name="LAST_COMMIT_MESSAGE" value="last com" />
   </component>
 </project>
