@@ -124,6 +124,7 @@ const ModalSlider = () => {
                     <div className="prev" onClick={prevSlide}>&#10094;</div>
                     <div className="next" onClick={nextSlide}>&#10095;</div>
                     <Swiper
+                        loop={true}
                         spaceBetween={50}
                         slidesPerView={1}
                         initialSlide={currentImageIndex}
