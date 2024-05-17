@@ -53,17 +53,13 @@ export default function Footer() {
 
     const Social_links = [
         {
-            url : '#',
+            url : 'https://www.youtube.com/watch?v=rxKtB16JDHw',
             icon : <IoLogoYoutube className={'scale-110'} />,
         },
         {
-            url : '#',
+            url : 'https://www.instagram.com/martialrabbits/',
             icon : <FaInstagram />,
-        },
-        {
-            url : '#',
-            icon : <RiTwitterXFill />,
-        },
+        }
     ]
 
     return<>
@@ -89,6 +85,7 @@ export default function Footer() {
                         {Social_links.map((value, index)=> <a key={index} href={value.url} target={"_blank"} className={'flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[500px]:text-2xl text-3xl text-white'}>
                             {value.icon}
                         </a>)}
+                        <a  className={'flex items-center justify-center duration-300 hover:text-[#F80AFB] max-[500px]:text-2xl text-3xl text-white'}><RiTwitterXFill /></a>
                     </div>
 
                 </div>
